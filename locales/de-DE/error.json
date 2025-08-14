@@ -66,6 +66,7 @@
     "429": "Entschuldigung, Ihre Anfrage ist zu häufig. Der Server ist etwas überlastet. Bitte versuchen Sie es später erneut",
     "431": "Entschuldigung, der Header Ihrer Anfrage ist zu groß und kann vom Server nicht verarbeitet werden",
     "451": "Entschuldigung, aus rechtlichen Gründen verweigert der Server die Bereitstellung dieser Ressource",
+    "499": "Es tut uns leid, Ihre Anfrage wurde unerwartet unterbrochen, während sie vom Server verarbeitet wurde. Dies könnte daran liegen, dass Sie die Aktion manuell abgebrochen haben oder die Netzwerkverbindung instabil ist. Bitte überprüfen Sie den Netzwerkstatus und versuchen Sie es erneut.",
     "500": "Entschuldigung, der Server hat anscheinend einige Schwierigkeiten und kann Ihre Anfrage vorübergehend nicht bearbeiten. Bitte versuchen Sie es später erneut",
     "501": "Es tut uns leid, der Server weiß noch nicht, wie er diese Anfrage bearbeiten soll. Bitte überprüfen Sie, ob Ihre Aktion korrekt ist.",
     "502": "Entschuldigung, der Server scheint die Orientierung verloren zu haben und kann vorübergehend keinen Service bereitstellen. Bitte versuchen Sie es später erneut",
@@ -76,7 +77,9 @@
     "507": "Es tut uns leid, der Server hat nicht genügend Speicherplatz, um Ihre Anfrage zu bearbeiten. Bitte versuchen Sie es später erneut.",
     "509": "Es tut uns leid, die Bandbreite des Servers ist erschöpft. Bitte versuchen Sie es später erneut.",
     "510": "Es tut uns leid, der Server unterstützt die angeforderte Erweiterungsfunktion nicht. Bitte wenden Sie sich an den Administrator.",
-    "524": "Es tut uns leid, der Server hat beim Warten auf eine Antwort die Zeit überschritten, möglicherweise aufgrund einer zu langsamen Antwort. Bitte versuchen Sie es später erneut.",
+    "520": "Es tut uns leid, der Server hat ein unerwartetes Problem festgestellt, das die Erfüllung Ihrer Anfrage verhindert. Bitte versuchen Sie es später erneut, wir arbeiten daran, dieses Problem zu beheben.",
+    "522": "Es tut uns leid, die Serververbindung hat aufgrund einer Zeitüberschreitung nicht rechtzeitig auf Ihre Anfrage reagiert. Möglicherweise ist das Netzwerk instabil oder der Server vorübergehend nicht erreichbar. Bitte versuchen Sie es später erneut, wir arbeiten daran, den Dienst wiederherzustellen.",
+    "524": "Es tut uns leid, der Server hat beim Warten auf eine Antwort eine Zeitüberschreitung erreicht, möglicherweise aufgrund einer langsamen Antwort. Bitte versuchen Sie es später erneut.",
     "AgentRuntimeError": "Es ist ein Fehler bei der Ausführung des Lobe-Sprachmodells aufgetreten. Bitte überprüfen Sie die folgenden Informationen oder versuchen Sie es erneut.",
     "ConnectionCheckFailed": "Die Anfrage brachte eine leere Antwort zurück. Bitte überprüfen Sie, ob die API-Proxy-Adresse am Ende nicht mit `/v1` endet.",
     "CreateMessageError": "Es tut uns leid, die Nachricht konnte nicht erfolgreich gesendet werden. Bitte kopieren Sie den Inhalt und senden Sie ihn erneut. Nach dem Aktualisieren der Seite wird diese Nachricht nicht gespeichert.",
@@ -110,6 +113,18 @@
     "PluginServerError": "Fehler bei der Serveranfrage des Plugins. Bitte überprüfen Sie die Fehlerinformationen unten in Ihrer Plugin-Beschreibungsdatei, Plugin-Konfiguration oder Serverimplementierung",
     "PluginSettingsInvalid": "Das Plugin muss korrekt konfiguriert werden, um verwendet werden zu können. Bitte überprüfen Sie Ihre Konfiguration auf Richtigkeit",
     "ProviderBizError": "Fehler bei der Anforderung des {{provider}}-Dienstes. Bitte überprüfen Sie die folgenden Informationen oder versuchen Sie es erneut.",
+
+    "GoogleAIBlockReason": {
+      "BLOCKLIST": "Ihr Inhalt enthält verbotene Begriffe. Bitte überprüfen und ändern Sie Ihre Eingabe, bevor Sie es erneut versuchen.",
+      "IMAGE_SAFETY": "Der generierte Bildinhalt wurde aus Sicherheitsgründen blockiert. Bitte versuchen Sie, Ihre Bildgenerierungsanfrage zu ändern.",
+      "LANGUAGE": "Die von Ihnen verwendete Sprache wird nicht unterstützt. Bitte versuchen Sie es mit Englisch oder anderen unterstützten Sprachen.",
+      "OTHER": "Inhalt wurde aus unbekannten Gründen blockiert. Bitte versuchen Sie, Ihre Anfrage umzuformulieren oder wenden Sie sich an den technischen Support.",
+      "PROHIBITED_CONTENT": "Ihr Inhalt könnte verbotene Inhaltstypen enthalten. Bitte passen Sie Ihre Anfrage an, um sicherzustellen, dass sie den Nutzungsrichtlinien entspricht.",
+      "RECITATION": "Ihr Inhalt wurde aufgrund möglicher Urheberrechtsprobleme blockiert. Bitte versuchen Sie, originalen Inhalt zu verwenden oder Ihre Anfrage umzuformulieren.",
+      "SAFETY": "Ihr Inhalt wurde aufgrund von Sicherheitsrichtlinien blockiert. Bitte versuchen Sie, Ihre Anfrage anzupassen, um potenziell schädliche oder unangemessene Inhalte zu vermeiden.",
+      "SPII": "Ihr Inhalt könnte sensible persönlich identifizierbare Informationen enthalten. Zum Schutz der Privatsphäre entfernen Sie bitte relevante sensible Informationen, bevor Sie es erneut versuchen.",
+      "default": "Inhalt wurde blockiert: {{blockReason}}. Bitte passen Sie Ihren Anfrageinhalt an und versuchen Sie es erneut."
+    },
     "QuotaLimitReached": "Es tut uns leid, die aktuelle Token-Nutzung oder die Anzahl der Anfragen hat das Kontingent (Quota) für diesen Schlüssel erreicht. Bitte erhöhen Sie das Kontingent für diesen Schlüssel oder versuchen Sie es später erneut.",
     "StreamChunkError": "Fehler beim Parsen des Nachrichtenchunks der Streaming-Anfrage. Bitte überprüfen Sie, ob die aktuelle API-Schnittstelle den Standards entspricht, oder wenden Sie sich an Ihren API-Anbieter.",
     "SubscriptionKeyMismatch": "Es tut uns leid, aufgrund eines vorübergehenden Systemfehlers ist das aktuelle Abonnement vorübergehend ungültig. Bitte klicken Sie auf die Schaltfläche unten, um das Abonnement wiederherzustellen, oder kontaktieren Sie uns per E-Mail für Unterstützung.",
@@ -120,6 +135,7 @@
   "stt": {
     "responseError": "Serviceanfrage fehlgeschlagen. Bitte überprüfen Sie die Konfiguration oder versuchen Sie es erneut"
   },
+  "testConnectionFailed": "Verbindungstest fehlgeschlagen: {{error}}",
   "tts": {
     "responseError": "Serviceanfrage fehlgeschlagen. Bitte überprüfen Sie die Konfiguration oder versuchen Sie es erneut"
   },
@@ -127,6 +143,7 @@
     "addProxyUrl": "Fügen Sie die OpenAI-Proxy-URL hinzu (optional)",
     "apiKey": {
       "description": "Geben Sie Ihren {{name}} API-Schlüssel ein, um die Sitzung zu starten.",
+      "imageGenerationDescription": "Geben Sie Ihren {{name}} API-Schlüssel ein, um mit der Generierung zu beginnen",
       "title": "Verwenden Sie Ihren benutzerdefinierten {{name}} API-Schlüssel"
     },
     "closeMessage": "Hinweis schließen",

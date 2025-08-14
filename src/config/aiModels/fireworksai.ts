@@ -4,13 +4,15 @@ const fireworksaiChatModels: AIChatModelCard[] = [
   {
     contextWindowTokens: 131_072,
     description:
-        'Llama 3.3 70B Instruct 是 Llama 3.1 70B 的 12 月更新版本。该模型在 Llama 3.1 70B（于 2024 年 7 月发布）的基础上进行了改进，增强了工具调用、多语言文本支持、数学和编程能力。该模型在推理、数学和指令遵循方面达到了行业领先水平，并且能够提供与 3.1 405B 相似的性能，同时在速度和成本上具有显著优势。',
+      'Llama 3.3 70B Instruct 是 Llama 3.1 70B 的 12 月更新版本。该模型在 Llama 3.1 70B（于 2024 年 7 月发布）的基础上进行了改进，增强了工具调用、多语言文本支持、数学和编程能力。该模型在推理、数学和指令遵循方面达到了行业领先水平，并且能够提供与 3.1 405B 相似的性能，同时在速度和成本上具有显著优势。',
     displayName: 'Llama 3.3 70B Instruct',
     enabled: true,
     id: 'accounts/fireworks/models/llama-v3p3-70b-instruct',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -22,8 +24,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/llama-v3p2-3b-instruct',
     pricing: {
-      input: 0.1,
-      output: 0.1,
+      units: [
+        { name: 'textInput', rate: 0.1, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.1, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -38,8 +42,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/llama-v3p2-11b-vision-instruct',
     pricing: {
-      input: 0.2,
-      output: 0.2,
+      units: [
+        { name: 'textInput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -54,8 +60,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/llama-v3p2-90b-vision-instruct',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -66,8 +74,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'Llama 3.1 8B Instruct',
     id: 'accounts/fireworks/models/llama-v3p1-8b-instruct',
     pricing: {
-      input: 0.2,
-      output: 0.2,
+      units: [
+        { name: 'textInput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -81,8 +91,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'Llama 3.1 70B Instruct',
     id: 'accounts/fireworks/models/llama-v3p1-70b-instruct',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -96,8 +108,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'Llama 3.1 405B Instruct',
     id: 'accounts/fireworks/models/llama-v3p1-405b-instruct',
     pricing: {
-      input: 3,
-      output: 3,
+      units: [
+        { name: 'textInput', rate: 3, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 3, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -108,8 +122,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'Llama 3 8B Instruct',
     id: 'accounts/fireworks/models/llama-v3-8b-instruct',
     pricing: {
-      input: 0.2,
-      output: 0.2,
+      units: [
+        { name: 'textInput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -120,8 +136,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'Llama 3 70B Instruct',
     id: 'accounts/fireworks/models/llama-v3-70b-instruct',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -132,21 +150,24 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'Llama 3 8B Instruct (HF version)',
     id: 'accounts/fireworks/models/llama-v3-8b-instruct-hf',
     pricing: {
-      input: 0.2,
-      output: 0.2,
+      units: [
+        { name: 'textInput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
   {
     contextWindowTokens: 32_768,
-    description:
-      '24B 参数模型，具备与更大型模型相当的最先进能力。',
+    description: '24B 参数模型，具备与更大型模型相当的最先进能力。',
     displayName: 'Mistral Small 3 Instruct',
     enabled: true,
     id: 'accounts/fireworks/models/mistral-small-24b-instruct-2501',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -157,8 +178,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'Mixtral MoE 8x7B Instruct',
     id: 'accounts/fireworks/models/mixtral-8x7b-instruct',
     pricing: {
-      input: 0.5,
-      output: 0.5,
+      units: [
+        { name: 'textInput', rate: 0.5, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.5, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -172,8 +195,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'Mixtral MoE 8x22B Instruct',
     id: 'accounts/fireworks/models/mixtral-8x22b-instruct',
     pricing: {
-      input: 1.2,
-      output: 1.2,
+      units: [
+        { name: 'textInput', rate: 1.2, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 1.2, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -188,8 +213,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/phi-3-vision-128k-instruct',
     pricing: {
-      input: 0.2,
-      output: 0.2,
+      units: [
+        { name: 'textInput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -200,8 +227,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     displayName: 'MythoMax L2 13b',
     id: 'accounts/fireworks/models/mythomax-l2-13b',
     pricing: {
-      input: 0.2,
-      output: 0.2,
+      units: [
+        { name: 'textInput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.2, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -213,8 +242,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/deepseek-v3',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -229,8 +260,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/deepseek-r1',
     pricing: {
-      input: 8,
-      output: 8,
+      units: [
+        { name: 'textInput', rate: 8, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 8, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -245,8 +278,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/qwen-qwq-32b-preview',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -258,8 +293,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/qwen2p5-72b-instruct',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -268,14 +305,15 @@ const fireworksaiChatModels: AIChatModelCard[] = [
       vision: true,
     },
     contextWindowTokens: 32_768,
-    description:
-      'Qwen-VL 模型的 72B 版本是阿里巴巴最新迭代的成果，代表了近一年的创新。',
+    description: 'Qwen-VL 模型的 72B 版本是阿里巴巴最新迭代的成果，代表了近一年的创新。',
     displayName: 'Qwen2 VL 72B Instruct',
     enabled: true,
     id: 'accounts/fireworks/models/qwen2-vl-72b-instruct',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -287,8 +325,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/fireworks/models/qwen2p5-coder-32b-instruct',
     pricing: {
-      input: 0.9,
-      output: 0.9,
+      units: [
+        { name: 'textInput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 0.9, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },
@@ -300,8 +340,10 @@ const fireworksaiChatModels: AIChatModelCard[] = [
     enabled: true,
     id: 'accounts/yi-01-ai/models/yi-large',
     pricing: {
-      input: 3,
-      output: 3,
+      units: [
+        { name: 'textInput', rate: 3, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 3, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
     type: 'chat',
   },

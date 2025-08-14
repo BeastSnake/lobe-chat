@@ -1,6 +1,6 @@
 'use client';
 
-import { ActionIcon, Tooltip } from '@lobehub/ui';
+import { ActionIcon } from '@lobehub/ui';
 import { PanelRightClose, PanelRightOpen } from 'lucide-react';
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -17,7 +17,7 @@ import { HotkeyEnum } from '@/types/hotkey';
 import SettingButton from '../../../features/SettingButton';
 import ShareButton from '../../../features/ShareButton';
 
-const HeaderAction = memo(() => {
+const HeaderAction = memo<{ className?: string }>(({ className }) => {
   const { t } = useTranslation('chat');
   const hotkey = useUserStore(settingsSelectors.getHotkeyById(HotkeyEnum.ToggleRightPanel));
   const [showAgentSettings, toggleConfig] = useGlobalStore((s) => [
@@ -28,15 +28,18 @@ const HeaderAction = memo(() => {
   const { isAgentEditable } = useServerConfigStore(featureFlagsSelectors);
 
   return (
-    <Flexbox gap={4} horizontal>
+    <Flexbox className={className} gap={4} horizontal>
       <ShareButton />
-      <Tooltip hotkey={hotkey} title={t('toggleRightPanel.title', { ns: 'hotkey' })}>
-        <ActionIcon
-          icon={showAgentSettings ? PanelRightClose : PanelRightOpen}
-          onClick={() => toggleConfig()}
-          size={DESKTOP_HEADER_ICON_SIZE}
-        />
-      </Tooltip>
+      <ActionIcon
+        icon={showAgentSettings ? PanelRightClose : PanelRightOpen}
+        onClick={() => toggleConfig()}
+        size={DESKTOP_HEADER_ICON_SIZE}
+        title={t('toggleRightPanel.title', { ns: 'hotkey' })}
+        tooltipProps={{
+          hotkey,
+          placement: 'bottom',
+        }}
+      />
       {isAgentEditable && <SettingButton />}
     </Flexbox>
   );

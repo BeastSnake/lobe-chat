@@ -26,8 +26,8 @@ export default {
     showDetail: '查看详情',
   },
   autoGenerate: '自动补全',
-  autoGenerateTooltip: '基于提示词自动补全助手描述',
-  autoGenerateTooltipDisabled: '请填写提示词后使用自动补全功能',
+  autoGenerateTooltip: '基于角色设定自动补全助手描述',
+  autoGenerateTooltipDisabled: '请填写角色设定后使用自动补全功能',
   back: '返回',
   batchDelete: '批量删除',
   blog: '产品博客',
@@ -186,6 +186,7 @@ export default {
   },
   fullscreen: '全屏模式',
   historyRange: '历史范围',
+  import: '导入',
   importData: '导入数据',
   importModal: {
     error: {
@@ -319,6 +320,7 @@ export default {
     unconnected: { tip: '信令服务器连接失败，将无法建立点对点通信频道，请检查网络后重试' },
   },
   tab: {
+    aiImage: 'AI 绘画',
     chat: '会话',
     discover: '发现',
     files: '文件',

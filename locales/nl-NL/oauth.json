@@ -28,13 +28,33 @@
     },
     "title": "Toestemming voor {{clientName}}"
   },
-  "failed": {
-    "backToHome": "Terug naar de startpagina",
-    "subTitle": "U heeft de autorisatie voor de applicatie om toegang te krijgen tot uw LobeChat-account geweigerd",
-    "title": "Autorisatie geweigerd"
+  "error": {
+    "backToHome": "Terug naar startpagina",
+    "desc": "OAuth-autorisatie mislukt, reden: {{reason}}",
+    "reason": {
+      "internal_error": "Serverfout",
+      "invalid_request": "Ongeldige aanvraagparameters"
+    },
+    "title": "Autorisatie mislukt"
+  },
+  "handoff": {
+    "desc": {
+      "processing": "De applicatie verwerkt de autorisatie, u wordt binnenkort doorgestuurd naar de volgende pagina...",
+      "success": "Er is geprobeerd de desktopapplicatie te openen. Als de applicatie niet automatisch opent, schakelt u handmatig over. U kunt dit browservenster later sluiten."
+    },
+    "title": {
+      "processing": "Autorisatie wordt verwerkt...",
+      "success": "Autorisatie is voltooid"
+    }
+  },
+  "login": {
+    "button": "Bevestig inloggen",
+    "description": "De applicatie {{clientName}} vraagt om uw account te gebruiken voor inloggen",
+    "title": "Inloggen bij {{clientName}}",
+    "userWelcome": "Welkom terug, "
   },
   "success": {
-    "subTitle": "U heeft de applicatie succesvol gemachtigd om toegang te krijgen tot uw LobeChat-account, u kunt deze pagina nu sluiten",
+    "subTitle": "U hebt de applicatie succesvol gemachtigd om toegang te krijgen tot uw account. U kunt deze pagina nu sluiten.",
     "title": "Autorisatie succesvol"
   }
 }

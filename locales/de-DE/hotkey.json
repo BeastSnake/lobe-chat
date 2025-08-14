@@ -3,9 +3,27 @@
     "desc": "Fügen Sie den aktuellen Eingabetext als Benutzernachricht hinzu, ohne die Generierung auszulösen",
     "title": "Benutzernachricht hinzufügen"
   },
+  "clearCurrentMessages": {
+    "desc": "Aktuelle Nachrichten und hochgeladene Dateien im Gespräch löschen",
+    "title": "Gesprächsnachrichten löschen"
+  },
+  "desktop": {
+    "openSettings": {
+      "desc": "Öffnet die Anwendungseinstellungsseite",
+      "title": "Anwendungseinstellungen"
+    },
+    "showApp": {
+      "desc": "Globale Tastenkombination zum Anzeigen oder Verbergen des Hauptfensters",
+      "title": "Hauptfenster anzeigen/verbergen"
+    }
+  },
   "editMessage": {
     "desc": "Treten Sie in den Bearbeitungsmodus, indem Sie die Alt-Taste gedrückt halten und auf die Nachricht doppelklicken",
     "title": "Nachricht bearbeiten"
+  },
+  "navigateToChat": {
+    "desc": "Zum Chat-Tab wechseln und einfach plaudern",
+    "title": "Zum Standard-Chat wechseln"
   },
   "openChatSettings": {
     "desc": "Aktuelle Sitzungseinstellungen anzeigen und ändern",
@@ -14,10 +32,6 @@
   "openHotkeyHelper": {
     "desc": "Anleitung zur Verwendung aller Tastenkombinationen anzeigen",
     "title": "Tastenkombinationshilfe öffnen"
-  },
-  "openSettings": {
-    "desc": "Öffnen Sie die Anwendungseinstellungen",
-    "title": "Anwendungseinstellungen"
   },
   "regenerateMessage": {
     "desc": "Die letzte Nachricht neu generieren",
@@ -30,6 +44,10 @@
   "search": {
     "desc": "Hauptsuchfeld der aktuellen Seite aufrufen",
     "title": "Suche"
+  },
+  "showApp": {
+    "desc": "Schnelles Öffnen des Hauptfensters der Anwendung",
+    "title": "Hauptfenster anzeigen"
   },
   "switchAgent": {
     "desc": "Wechseln Sie zwischen den im Seitenbereich fixierten Assistenten, indem Sie die Strg-Taste gedrückt halten und eine Zahl von 0 bis 9 drücken",

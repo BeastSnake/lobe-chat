@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 import { OIDCService } from '@/server/services/oidc';
 import { getUserAuth } from '@/utils/server/auth';
+import { correctOIDCUrl } from '@/utils/server/correctOIDCUrl';
 
 const log = debug('lobe-oidc:consent');
 
@@ -113,7 +114,15 @@ export async function POST(request: NextRequest) {
     const internalRedirectUrlString = await oidcService.getInteractionResult(uid, result);
     log('OIDC Provider internal redirect URL string: %s', internalRedirectUrlString);
 
-    return NextResponse.redirect(internalRedirectUrlString, {
+    let finalRedirectUrl;
+    try {
+      finalRedirectUrl = correctOIDCUrl(request, new URL(internalRedirectUrlString));
+    } catch {
+      finalRedirectUrl = new URL(internalRedirectUrlString);
+      log('Warning: Could not parse redirect URL, using as-is: %s', internalRedirectUrlString);
+    }
+
+    return NextResponse.redirect(finalRedirectUrl, {
       headers: request.headers,
       status: 303,
     });

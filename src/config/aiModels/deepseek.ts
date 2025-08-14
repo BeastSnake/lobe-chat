@@ -1,5 +1,6 @@
 import { AIChatModelCard } from '@/types/aiModel';
 
+// https://api-docs.deepseek.com/zh-cn/quick_start/pricing
 const deepseekChatModels: AIChatModelCard[] = [
   {
     abilities: {
@@ -11,17 +12,21 @@ const deepseekChatModels: AIChatModelCard[] = [
     displayName: 'DeepSeek V3',
     enabled: true,
     id: 'deepseek-chat',
+    maxOutput: 8192,
     pricing: {
-      cachedInput: 0.5,
       currency: 'CNY',
-      input: 2,
-      output: 8,
+      units: [
+        { name: 'textInput_cacheRead', rate: 0.5, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textInput', rate: 2, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 8, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
-    releasedAt: '2024-12-26',
+    releasedAt: '2025-03-24',
     type: 'chat',
   },
   {
     abilities: {
+      functionCall: true,
       reasoning: true,
     },
     contextWindowTokens: 65_536,
@@ -30,13 +35,16 @@ const deepseekChatModels: AIChatModelCard[] = [
     displayName: 'DeepSeek R1',
     enabled: true,
     id: 'deepseek-reasoner',
+    maxOutput: 8192,
     pricing: {
-      cachedInput: 1,
       currency: 'CNY',
-      input: 4,
-      output: 16,
+      units: [
+        { name: 'textInput_cacheRead', rate: 1, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textInput', rate: 4, strategy: 'fixed', unit: 'millionTokens' },
+        { name: 'textOutput', rate: 16, strategy: 'fixed', unit: 'millionTokens' },
+      ],
     },
-    releasedAt: '2025-01-20',
+    releasedAt: '2025-05-28',
     type: 'chat',
   },
 ];

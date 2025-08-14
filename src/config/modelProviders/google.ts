@@ -4,6 +4,18 @@ import { ModelProviderCard } from '@/types/llm';
 const Google: ModelProviderCard = {
   chatModels: [
     {
+      contextWindowTokens: 1_048_576 + 65_536,
+      description:
+        'Gemini 2.5 Pro Experimental 是 Google 最先进的思维模型，能够对代码、数学和STEM领域的复杂问题进行推理，以及使用长上下文分析大型数据集、代码库和文档。',
+      displayName: 'Gemini 2.5 Pro Experimental 03-25',
+      enabled: true,
+      functionCall: true,
+      id: 'gemini-2.5-pro-exp-03-25',
+      maxOutput: 65_536,
+      releasedAt: '2025-03-25',
+      vision: true,
+    },
+    {
       contextWindowTokens: 2_097_152 + 8192,
       description:
         'Gemini 2.0 Pro Experimental 是 Google 最新的实验性多模态AI模型，与历史版本相比有一定的质量提升，特别是对于世界知识、代码和长上下文。',
@@ -12,11 +24,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'gemini-2.0-pro-exp-02-05',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0,
-        input: 0,
-        output: 0,
-      },
       releasedAt: '2025-02-05',
       vision: true,
     },
@@ -29,11 +36,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'gemini-2.0-flash',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.025,
-        input: 0.1,
-        output: 0.4,
-      },
       releasedAt: '2025-02-05',
       vision: true,
     },
@@ -45,11 +47,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'gemini-2.0-flash-001',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.025,
-        input: 0.1,
-        output: 0.4,
-      },
       releasedAt: '2025-02-05',
       vision: true,
     },
@@ -59,11 +56,6 @@ const Google: ModelProviderCard = {
       displayName: 'Gemini 2.0 Flash-Lite Preview 02-05',
       id: 'gemini-2.0-flash-lite-preview-02-05',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.018_75,
-        input: 0.075,
-        output: 0.3,
-      },
       releasedAt: '2025-02-05',
       vision: true,
     },
@@ -75,11 +67,6 @@ const Google: ModelProviderCard = {
       enabled: true,
       id: 'gemini-2.0-flash-thinking-exp-01-21',
       maxOutput: 65_536,
-      pricing: {
-        cachedInput: 0,
-        input: 0,
-        output: 0,
-      },
       releasedAt: '2025-01-21',
       vision: true,
     },
@@ -91,11 +78,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'learnlm-1.5-pro-experimental',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0,
-        input: 0,
-        output: 0,
-      },
       releasedAt: '2024-11-19',
       vision: true,
     },
@@ -106,11 +88,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'gemini-1.5-flash-002',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.018_75,
-        input: 0.075,
-        output: 0.3,
-      },
       releasedAt: '2024-09-25',
       vision: true,
     },
@@ -121,11 +98,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'gemini-1.5-flash-001',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.018_75,
-        input: 0.075,
-        output: 0.3,
-      },
       vision: true,
     },
     {
@@ -136,11 +108,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'gemini-1.5-pro-002',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.315,
-        input: 1.25,
-        output: 2.5,
-      },
       releasedAt: '2024-09-24',
       vision: true,
     },
@@ -151,11 +118,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'gemini-1.5-pro-001',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.875,
-        input: 3.5,
-        output: 10.5,
-      },
       releasedAt: '2024-02-15',
       vision: true,
     },
@@ -166,11 +128,6 @@ const Google: ModelProviderCard = {
       functionCall: true,
       id: 'gemini-1.5-flash-8b',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.02,
-        input: 0.075,
-        output: 0.3,
-      },
       releasedAt: '2024-10-03',
       vision: true,
     },
@@ -190,12 +147,12 @@ const Google: ModelProviderCard = {
     proxyUrl: {
       placeholder: 'https://generativelanguage.googleapis.com',
     },
+    responseAnimation: {
+      speed: 50,
+      text: 'smooth',
+    },
     sdkType: 'google',
     showModelFetcher: true,
-    smoothing: {
-      speed: 50,
-      text: true,
-    },
   },
   url: 'https://ai.google.dev',
 };

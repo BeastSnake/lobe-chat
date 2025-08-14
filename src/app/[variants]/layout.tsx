@@ -7,6 +7,7 @@ import { isRtlLang } from 'rtl-detect';
 
 import Analytics from '@/components/Analytics';
 import { DEFAULT_LANG } from '@/const/locale';
+import { isDesktop } from '@/const/version';
 import PWAInstall from '@/features/PWAInstall';
 import AuthProvider from '@/layout/AuthProvider';
 import GlobalProvider from '@/layout/GlobalProvider';
@@ -30,7 +31,13 @@ const RootLayout = async ({ children, params, modal }: RootLayoutProps) => {
   const direction = isRtlLang(locale) ? 'rtl' : 'ltr';
 
   return (
-    <html dir={direction} lang={locale} suppressHydrationWarning>
+    <html dir={direction} lang={locale}>
+      <head>
+        {process.env.DEBUG_REACT_SCAN === '1' && (
+          // eslint-disable-next-line @next/next/no-sync-scripts
+          <script crossOrigin="anonymous" src="https://unpkg.com/react-scan/dist/auto.global.js" />
+        )}
+      </head>
       <body>
         <NuqsAdapter>
           <GlobalProvider
@@ -39,6 +46,7 @@ const RootLayout = async ({ children, params, modal }: RootLayoutProps) => {
             locale={locale}
             neutralColor={neutralColor}
             primaryColor={primaryColor}
+            variants={variants}
           >
             <AuthProvider>
               {children}
@@ -78,7 +86,7 @@ export const generateViewport = async (props: DynamicLayoutProps): ResolvingView
 
 export const generateStaticParams = () => {
   const themes: ThemeAppearance[] = ['dark', 'light'];
-  const mobileOptions = [true, false];
+  const mobileOptions = isDesktop ? [false] : [true, false];
   // only static for serveral page, other go to dynamtic
   const staticLocales: Locales[] = [DEFAULT_LANG, 'zh-CN'];
 

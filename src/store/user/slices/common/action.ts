@@ -1,5 +1,6 @@
+import { getSingletonAnalyticsOptional } from '@lobehub/analytics';
 import useSWR, { SWRResponse, mutate } from 'swr';
-import { DeepPartial } from 'utility-types';
+import type { PartialDeep } from 'type-fest';
 import type { StateCreator } from 'zustand/vanilla';
 
 import { DEFAULT_PREFERENCE } from '@/const/user';
@@ -22,7 +23,6 @@ const GET_USER_STATE_KEY = 'initUserState';
  */
 export interface CommonAction {
   refreshUserState: () => Promise<void>;
-
   updateAvatar: (avatar: string) => Promise<void>;
   useCheckTrace: (shouldFetch: boolean) => SWRResponse;
   useInitUserState: (
@@ -44,9 +44,9 @@ export const createCommonSlice: StateCreator<
     await mutate(GET_USER_STATE_KEY);
   },
   updateAvatar: async (avatar) => {
-    const { userClientService } = await import('@/services/user');
+    // 1. 更新服务端/数据库中的头像
+    await userService.updateAvatar(avatar);
 
-    await userClientService.updateAvatar(avatar);
     await get().refreshUserState();
   },
 
@@ -76,7 +76,7 @@ export const createCommonSlice: StateCreator<
 
           if (data) {
             // merge settings
-            const serverSettings: DeepPartial<UserSettings> = {
+            const serverSettings: PartialDeep<UserSettings> = {
               defaultAgent: serverConfig.defaultAgent,
               languageModel: serverConfig.languageModel,
               systemAgent: serverConfig.systemAgent,
@@ -93,6 +93,7 @@ export const createCommonSlice: StateCreator<
               data.avatar || data.userId
                 ? merge(get().user, {
                     avatar: data.avatar,
+                    email: data.email,
                     firstName: data.firstName,
                     fullName: data.fullName,
                     id: data.userId,
@@ -112,12 +113,20 @@ export const createCommonSlice: StateCreator<
                 preference,
                 serverLanguageModel: serverConfig.languageModel,
                 settings: data.settings || {},
+                subscriptionPlan: data.subscriptionPlan,
                 user,
               },
               false,
               n('initUserState'),
             );
-
+            //analytics
+            const analytics = getSingletonAnalyticsOptional();
+            analytics?.identify(data.userId || '', {
+              email: data.email,
+              firstName: data.firstName,
+              lastName: data.lastName,
+              username: data.username,
+            });
             get().refreshDefaultModelProviderList({ trigger: 'fetchUserState' });
           }
         },

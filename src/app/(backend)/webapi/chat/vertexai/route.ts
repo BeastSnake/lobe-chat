@@ -1,6 +1,7 @@
+import { ModelProvider, ModelRuntime } from '@lobechat/model-runtime';
+
 import { checkAuth } from '@/app/(backend)/middleware/auth';
-import { AgentRuntime, ModelProvider } from '@/libs/agent-runtime';
-import { LobeVertexAI } from '@/libs/agent-runtime/vertexai';
+import { LobeVertexAI } from '@/libs/model-runtime/vertexai';
 import { safeParseJSON } from '@/utils/safeParseJSON';
 
 import { POST as UniverseRoute } from '../[provider]/route';
@@ -28,7 +29,7 @@ export const POST = checkAuth(async (req: Request, { jwtPayload }) =>
         project: !!credentials?.project_id ? credentials?.project_id : process.env.VERTEXAI_PROJECT,
       });
 
-      return new AgentRuntime(instance);
+      return new ModelRuntime(instance);
     },
     params: Promise.resolve({ provider: ModelProvider.VertexAI }),
   }),

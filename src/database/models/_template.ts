@@ -1,4 +1,4 @@
-import { and, desc, eq } from 'drizzle-orm/expressions';
+import { and, desc, eq } from 'drizzle-orm';
 
 import { LobeChatDatabase } from '@/database/type';
 
@@ -13,7 +13,7 @@ export class TemplateModel {
     this.db = db;
   }
 
-  create = async (params: NewSessionGroup) => {
+  create = async (params: Omit<NewSessionGroup, 'userId'>) => {
     const [result] = await this.db
       .insert(sessionGroups)
       .values({ ...params, userId: this.userId })

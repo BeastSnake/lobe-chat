@@ -1,4 +1,4 @@
-import { resolve } from 'node:path';
+import { join, resolve } from 'node:path';
 import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 
 export default defineConfig({
@@ -8,8 +8,12 @@ export default defineConfig({
   },
   test: {
     alias: {
+      /* eslint-disable sort-keys-fix/sort-keys-fix */
+      '@/libs/model-runtime': resolve(__dirname, './packages/model-runtime/src'),
+      '@/types': resolve(__dirname, './packages/types/src'),
       '@': resolve(__dirname, './src'),
       '~test-utils': resolve(__dirname, './tests/utils.tsx'),
+      /* eslint-enable */
     },
     coverage: {
       all: false,
@@ -32,6 +36,7 @@ export default defineConfig({
       '**/node_modules/**',
       '**/dist/**',
       '**/build/**',
+      '**/apps/desktop/**',
       'src/database/server/**/**',
       'src/database/repositories/dataImporter/deprecated/**/**',
     ],
@@ -41,6 +46,6 @@ export default defineConfig({
         inline: ['vitest-canvas-mock'],
       },
     },
-    setupFiles: './tests/setup.ts',
+    setupFiles: join(__dirname, './tests/setup.ts'),
   },
 });

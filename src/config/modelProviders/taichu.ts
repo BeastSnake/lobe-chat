@@ -10,11 +10,6 @@ const Taichu: ModelProviderCard = {
       enabled: true,
       functionCall: true,
       id: 'taichu_llm',
-      pricing: {
-        currency: 'CNY',
-        input: 2,
-        output: 2,
-      },
     },
     {
       contextWindowTokens: 4096,
@@ -22,11 +17,6 @@ const Taichu: ModelProviderCard = {
       displayName: 'Taichu 2.0V',
       enabled: true,
       id: 'taichu2_mm',
-      pricing: {
-        currency: 'CNY',
-        input: 5,
-        output: 5,
-      },
       vision: true,
     },
   ],
@@ -37,6 +27,9 @@ const Taichu: ModelProviderCard = {
   modelsUrl: 'https://ai-maas.wair.ac.cn/#/doc',
   name: 'Taichu',
   settings: {
+    proxyUrl: {
+      placeholder: 'https://ai-maas.wair.ac.cn/maas/v1',
+    },
     sdkType: 'openai',
   },
   url: 'https://ai-maas.wair.ac.cn',

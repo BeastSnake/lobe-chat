@@ -1,29 +1,42 @@
-import { CopyButton, Icon, Markdown } from '@lobehub/ui';
+import { ActionIcon, CopyButton, Icon, Markdown, ScrollShadow } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { AnimatePresence, motion } from 'framer-motion';
 import { AtomIcon, ChevronDown, ChevronRight } from 'lucide-react';
 import { rgba } from 'polished';
-import { CSSProperties, memo, useEffect, useState } from 'react';
+import { CSSProperties, RefObject, memo, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 import { CitationItem } from '@/types/message';
 
-const useStyles = createStyles(({ css, token, isDarkMode }) => ({
+const useStyles = createStyles(({ css, token }) => ({
   container: css`
-    width: fit-content;
-    padding-block: 4px;
-    padding-inline: 8px;
-    border-radius: 6px;
-
+    overflow: hidden;
+    border-radius: ${token.borderRadius}px;
     color: ${token.colorTextTertiary};
-
-    &:hover {
-      background: ${isDarkMode ? token.colorFillQuaternary : token.colorFillTertiary};
-    }
+    transition: all 0.2s ${token.motionEaseOut};
+  `,
+  contentScroll: css`
+    max-height: min(40vh, 320px);
+    padding-block-end: 8px;
+    padding-inline: 8px;
   `,
   expand: css`
-    background: ${isDarkMode ? token.colorFillQuaternary : token.colorFillTertiary} !important;
+    color: ${token.colorTextTertiary};
+  `,
+  header: css`
+    padding-block: 4px;
+    padding-inline: 8px 4px;
+    transition: background 0.2s ${token.motionEaseOut};
+    transition: all 0.2s ${token.motionEaseOut};
+
+    &:hover {
+      background: ${token.colorFillQuaternary};
+    }
+  `,
+
+  headerExpand: css`
+    color: ${token.colorTextSecondary};
   `,
   shinyText: css`
     color: ${rgba(token.colorText, 0.45)};
@@ -66,21 +79,56 @@ interface ThinkingProps {
   duration?: number;
   style?: CSSProperties;
   thinking?: boolean;
+  thinkingAnimated?: boolean;
 }
 
-const Thinking = memo<ThinkingProps>(({ content, duration, thinking, style, citations }) => {
+const Thinking = memo<ThinkingProps>((props) => {
+  const { content, duration, thinking, style, citations, thinkingAnimated } = props;
   const { t } = useTranslation(['components', 'common']);
-  const { styles, cx } = useStyles();
+  const { styles, cx, theme } = useStyles();
 
   const [showDetail, setShowDetail] = useState(false);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setShowDetail(!!thinking);
   }, [thinking]);
 
+  // 当内容变更且正在思考时，如果用户接近底部则自动滚动到底部
+  useEffect(() => {
+    if (!thinking || !showDetail) return;
+    const container = contentRef.current;
+    if (!container) return;
+
+    // 仅当用户接近底部时才自动滚动，避免打断用户查看上方内容
+    const distanceToBottom = container.scrollHeight - container.scrollTop - container.clientHeight;
+    const isNearBottom = distanceToBottom < 120;
+
+    if (isNearBottom) {
+      requestAnimationFrame(() => {
+        container.scrollTop = container.scrollHeight;
+      });
+    }
+  }, [content, thinking, showDetail]);
+
+  // 展开时滚动到底部，便于查看最新内容
+  useEffect(() => {
+    if (!showDetail) return;
+    const container = contentRef.current;
+    if (!container) return;
+    requestAnimationFrame(() => {
+      container.scrollTop = container.scrollHeight;
+    });
+  }, [showDetail]);
+
   return (
-    <Flexbox className={cx(styles.container, showDetail && styles.expand)} gap={16} style={style}>
+    <Flexbox
+      className={cx(styles.container, showDetail && styles.expand)}
+      style={style}
+      width={'100%'}
+    >
       <Flexbox
+        className={cx(styles.header, showDetail && styles.headerExpand)}
         distribution={'space-between'}
         flex={1}
         gap={8}
@@ -89,17 +137,18 @@ const Thinking = memo<ThinkingProps>(({ content, duration, thinking, style, cita
           setShowDetail(!showDetail);
         }}
         style={{ cursor: 'pointer' }}
+        width={'100%'}
       >
         {thinking ? (
-          <Flexbox align={'center'} gap={8} horizontal>
-            <Icon icon={AtomIcon} />
+          <Flexbox align={'center'} gap={8} horizontal width={'100%'}>
+            <Icon color={theme.purple} icon={AtomIcon} />
             <Flexbox className={styles.shinyText} horizontal>
               {t('Thinking.thinking')}
             </Flexbox>
           </Flexbox>
         ) : (
-          <Flexbox align={'center'} gap={8} horizontal>
-            <Icon icon={AtomIcon} />
+          <Flexbox align={'center'} gap={8} horizontal width={'100%'}>
+            <Icon color={showDetail ? theme.purple : undefined} icon={AtomIcon} />
             <Flexbox>
               {!duration
                 ? t('Thinking.thoughtWithDuration')
@@ -117,10 +166,9 @@ const Thinking = memo<ThinkingProps>(({ content, duration, thinking, style, cita
               <CopyButton content={content} size={'small'} title={t('copy', { ns: 'common' })} />
             </div>
           )}
-          <Icon icon={showDetail ? ChevronDown : ChevronRight} />
+          <ActionIcon icon={showDetail ? ChevronDown : ChevronRight} size={'small'} />
         </Flexbox>
       </Flexbox>
-
       <AnimatePresence initial={false}>
         {showDetail && (
           <motion.div
@@ -133,17 +181,30 @@ const Thinking = memo<ThinkingProps>(({ content, duration, thinking, style, cita
               ease: [0.4, 0, 0.2, 1], // 使用 ease-out 缓动函数
             }}
             variants={{
-              collapsed: { height: 0, opacity: 0, width: 'auto' },
-              open: { height: 'auto', opacity: 1, width: 'auto' },
+              collapsed: { opacity: 0, width: 'auto' },
+              open: { opacity: 1, width: 'auto' },
             }}
           >
-            {typeof content === 'string' ? (
-              <Markdown citations={citations} variant={'chat'}>
-                {content}
-              </Markdown>
-            ) : (
-              content
-            )}
+            <ScrollShadow
+              className={styles.contentScroll}
+              ref={contentRef as unknown as RefObject<HTMLDivElement>}
+              size={12}
+            >
+              {typeof content === 'string' ? (
+                <Markdown
+                  animated={thinkingAnimated}
+                  citations={citations}
+                  style={{
+                    overflow: 'unset',
+                  }}
+                  variant={'chat'}
+                >
+                  {content}
+                </Markdown>
+              ) : (
+                content
+              )}
+            </ScrollShadow>
           </motion.div>
         )}
       </AnimatePresence>

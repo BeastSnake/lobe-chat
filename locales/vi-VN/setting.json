@@ -45,14 +45,25 @@
   },
   "hotkey": {
     "conflicts": "Xung đột với phím tắt hiện có",
+    "errors": {
+      "CONFLICT": "Phím tắt bị trùng: Phím tắt này đã được chức năng khác sử dụng",
+      "INVALID_FORMAT": "Định dạng phím tắt không hợp lệ: Vui lòng sử dụng định dạng đúng (ví dụ CommandOrControl+E)",
+      "INVALID_ID": "ID phím tắt không hợp lệ",
+      "NO_MODIFIER": "Phím tắt phải bao gồm phím điều khiển (Ctrl, Alt, Shift, v.v.)",
+      "SYSTEM_OCCUPIED": "Phím tắt đã bị hệ thống hoặc ứng dụng khác chiếm dụng",
+      "UNKNOWN": "Cập nhật thất bại: Lỗi không xác định"
+    },
     "group": {
       "conversation": "Cuộc trò chuyện",
+      "desktop": "Phiên bản máy tính để bàn",
       "essential": "Cơ bản"
     },
     "invalidCombination": "Phím tắt cần ít nhất một phím sửa đổi (Ctrl, Alt, Shift) và một phím thông thường",
     "record": "Nhấn phím để ghi lại phím tắt",
     "reset": "Đặt lại thành phím tắt mặc định",
-    "title": "Phím tắt"
+    "title": "Phím tắt",
+    "updateError": "Cập nhật phím tắt thất bại: Lỗi mạng hoặc hệ thống",
+    "updateSuccess": "Cập nhật phím tắt thành công"
   },
   "llm": {
     "aesGcm": "Khóa và địa chỉ proxy của bạn sẽ được mã hóa bằng thuật toán mã hóa <1>AES-GCM</1>",
@@ -129,6 +140,7 @@
     "waitingForMore": "Có thêm mô hình đang <1>được lên kế hoạch tích hợp</1>, hãy chờ đợi"
   },
   "plugin": {
+    "addMCPPlugin": "Thêm plugin MCP",
     "addTooltip": "Thêm tiện ích",
     "clearDeprecated": "Xóa tiện ích không còn hỗ trợ",
     "empty": "Hiện chưa có tiện ích nào được cài đặt, hãy truy cập <1>cửa hàng tiện ích</1> để khám phá",
@@ -150,6 +162,7 @@
       "title": "Màu nền"
     },
     "description": {
+      "desc": "Giới thiệu ngắn gọn về trợ lý của bạn, không dùng để thiết lập nhân vật",
       "placeholder": "Vui lòng nhập mô tả trợ lý",
       "title": "Mô tả trợ lý"
     },
@@ -161,11 +174,38 @@
       "placeholder": "Vui lòng nhập từ khóa Prompt cho vai diễn",
       "title": "Thiết lập vai diễn"
     },
+    "submit": "Cập nhật thông tin trợ lý",
     "tag": {
+      "desc": "Thẻ trợ lý sẽ được hiển thị trong thị trường trợ lý",
       "placeholder": "Vui lòng nhập nhãn",
       "title": "Nhãn"
     },
     "title": "Thông tin trợ lý"
+  },
+  "settingAppearance": {
+    "animationMode": {
+      "agile": "Nhanh nhẹn",
+      "desc": "Chọn tốc độ hoạt ảnh phản hồi của ứng dụng",
+      "disabled": "Tắt",
+      "elegant": "Thanh lịch",
+      "title": "Hoạt ảnh phản hồi"
+    },
+    "neutralColor": {
+      "desc": "Tùy chỉnh thang độ xám với các xu hướng màu sắc khác nhau",
+      "title": "Màu trung tính"
+    },
+    "noAnimation": {
+      "desc": "Vô hiệu hóa tất cả hiệu ứng hoạt ảnh trong ứng dụng",
+      "title": "Chế độ không hoạt ảnh"
+    },
+    "preview": {
+      "title": "Bảng màu"
+    },
+    "primaryColor": {
+      "desc": "Tùy chỉnh màu chủ đề",
+      "title": "Màu chủ đề"
+    },
+    "title": "Giao diện ứng dụng"
   },
   "settingChat": {
     "autoCreateTopicThreshold": {
@@ -206,7 +246,49 @@
       "placeholder": "Mẫu xử lý trước {{text}} sẽ được thay thế bằng thông tin nhập thời gian thực",
       "title": "Mẫu xử lý đầu vào của người dùng"
     },
+    "submit": "Cập nhật sở thích trò chuyện",
     "title": "Cài đặt trò chuyện"
+  },
+  "settingChatAppearance": {
+    "fontSize": {
+      "desc": "Kích thước phông chữ của nội dung trò chuyện",
+      "marks": {
+        "normal": "Chuẩn"
+      },
+      "title": "Kích thước phông chữ"
+    },
+    "highlighterTheme": {
+      "title": "Chủ đề làm nổi bật mã"
+    },
+    "mermaidTheme": {
+      "title": "Chủ đề Nàng Tiên Cá"
+    },
+    "title": "Giao diện trò chuyện",
+    "transitionMode": {
+      "desc": "Hiệu ứng chuyển tiếp của tin nhắn trò chuyện",
+      "options": {
+        "fadeIn": "Mờ dần",
+        "none": {
+          "desc": "Điều này phụ thuộc vào cách mô hình phản hồi, vui lòng tự kiểm tra.",
+          "value": "Không"
+        },
+        "smooth": "Mượt mà"
+      },
+      "title": "Hiệu ứng chuyển tiếp"
+    }
+  },
+  "settingCommon": {
+    "lang": {
+      "autoMode": "Theo hệ thống",
+      "title": "Ngôn ngữ"
+    },
+    "themeMode": {
+      "auto": "Tự động",
+      "dark": "Tối",
+      "light": "Sáng",
+      "title": "Chủ đề"
+    },
+    "title": "Cài đặt chung"
   },
   "settingModel": {
     "enableMaxTokens": {
@@ -235,7 +317,7 @@
       "title": "Độ phân tán trong diễn đạt"
     },
     "reasoningEffort": {
-      "desc": "Giá trị càng lớn, khả năng suy luận càng mạnh, nhưng có thể làm tăng thời gian phản hồi và tiêu tốn Token",
+      "desc": "Giá trị càng cao, khả năng suy luận càng mạnh, nhưng có thể làm tăng thời gian phản hồi và tiêu thụ Token",
       "options": {
         "high": "Cao",
         "low": "Thấp",
@@ -243,6 +325,7 @@
       },
       "title": "Cường độ suy luận"
     },
+    "submit": "Cập nhật cài đặt mô hình",
     "temperature": {
       "desc": "Giá trị càng lớn, câu trả lời càng sáng tạo và giàu trí tưởng tượng; giá trị càng nhỏ, câu trả lời càng nghiêm ngặt",
       "title": "Mức độ sáng tạo",
@@ -319,6 +402,7 @@
       "desc": "Trong đó, trình duyệt là dịch vụ nhận dạng giọng nói nguyên bản của trình duyệt",
       "title": "Dịch vụ nhận dạng giọng nói"
     },
+    "submit": "Cập nhật dịch vụ giọng nói",
     "title": "Dịch vụ giọng nói",
     "tts": "Cài đặt tổng hợp giọng nói",
     "ttsService": {
@@ -330,37 +414,6 @@
       "preview": "Xem trước âm thanh",
       "title": "Nguồn âm thanh tổng hợp giọng nói"
     }
-  },
-  "settingTheme": {
-    "avatar": {
-      "title": "Hình đại diện"
-    },
-    "fontSize": {
-      "desc": "Kích cỡ chữ của nội dung trò chuyện",
-      "marks": {
-        "normal": "Bình thường"
-      },
-      "title": "Kích cỡ chữ"
-    },
-    "lang": {
-      "autoMode": "Theo hệ thống",
-      "title": "Ngôn ngữ"
-    },
-    "neutralColor": {
-      "desc": "Tùy chỉnh mức xám theo xu hướng màu sắc khác nhau",
-      "title": "Màu trung tính"
-    },
-    "primaryColor": {
-      "desc": "Tùy chỉnh màu chủ đề",
-      "title": "Màu chủ đề"
-    },
-    "themeMode": {
-      "auto": "Tự động",
-      "dark": "Tối",
-      "light": "Sáng",
-      "title": "Chủ đề"
-    },
-    "title": "Cài đặt chủ đề"
   },
   "storage": {
     "actions": {
@@ -395,6 +448,12 @@
     "metaMiss": "Vui lòng điền đầy đủ thông tin trợ lý trước khi gửi, cần bao gồm tên, mô tả và nhãn",
     "placeholder": "Vui lòng nhập nhận dạng trợ lý, cần phải duy nhất, ví dụ như phát triển web",
     "tooltips": "Chia sẻ lên thị trường trợ lý"
+  },
+  "submitFooter": {
+    "reset": "Đặt lại",
+    "submit": "Lưu",
+    "unSaved": "Thay đổi chưa được lưu",
+    "unSavedWarning": "Hiện tại có thay đổi chưa được lưu"
   },
   "sync": {
     "device": {
@@ -447,6 +506,12 @@
       "placeholder": "Nhập từ gợi ý tùy chỉnh",
       "title": "Từ gợi ý tùy chỉnh"
     },
+    "generationTopic": {
+      "label": "Mô hình đặt tên chủ đề vẽ AI",
+      "modelDesc": "Mô hình được chỉ định để tự động đặt tên chủ đề cho vẽ AI",
+      "title": "Tự động đặt tên chủ đề vẽ AI"
+    },
+    "helpInfo": "Khi tạo trợ lý mới, sẽ sử dụng cài đặt trợ lý mặc định làm giá trị mặc định.",
     "historyCompress": {
       "label": "Mô hình lịch sử cuộc trò chuyện",
       "modelDesc": "Chỉ định mô hình được sử dụng để nén lịch sử cuộc trò chuyện",
@@ -482,6 +547,7 @@
     "hotkey": "Phím tắt",
     "llm": "Mô hình ngôn ngữ",
     "provider": "Nhà cung cấp AI",
+    "proxy": "Mạng proxy",
     "storage": "Lưu trữ dữ liệu",
     "sync": "Đồng bộ trên đám mây",
     "system-agent": "Trợ lý hệ thống",

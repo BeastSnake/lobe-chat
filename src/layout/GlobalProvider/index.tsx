@@ -1,7 +1,8 @@
 import { ReactNode, Suspense } from 'react';
 
-import { appEnv } from '@/config/app';
+import { LobeAnalyticsProviderWrapper } from '@/components/Analytics/LobeAnalyticsProviderWrapper';
 import { getServerFeatureFlagsValue } from '@/config/featureFlags';
+import { appEnv } from '@/envs/app';
 import DevPanel from '@/features/DevPanel';
 import { getServerGlobalConfig } from '@/server/globalConfig';
 import { ServerConfigStoreProvider } from '@/store/serverConfig/Provider';
@@ -12,7 +13,6 @@ import AppTheme from './AppTheme';
 import ImportSettings from './ImportSettings';
 import Locale from './Locale';
 import QueryProvider from './Query';
-import ReactScan from './ReactScan';
 import StoreInitialization from './StoreInitialization';
 import StyleRegistry from './StyleRegistry';
 
@@ -23,6 +23,7 @@ interface GlobalLayoutProps {
   locale: string;
   neutralColor?: string;
   primaryColor?: string;
+  variants?: string;
 }
 
 const GlobalLayout = async ({
@@ -32,6 +33,7 @@ const GlobalLayout = async ({
   locale: userLocale,
   appearance,
   isMobile,
+  variants,
 }: GlobalLayoutProps) => {
   const antdLocale = await getAntdLocale(userLocale);
 
@@ -52,19 +54,21 @@ const GlobalLayout = async ({
           <ServerConfigStoreProvider
             featureFlags={serverFeatureFlags}
             isMobile={isMobile}
+            segmentVariants={variants}
             serverConfig={serverConfig}
           >
-            <QueryProvider>{children}</QueryProvider>
+            <QueryProvider>
+              <LobeAnalyticsProviderWrapper>{children}</LobeAnalyticsProviderWrapper>
+            </QueryProvider>
             <StoreInitialization />
             <Suspense>
               <ImportSettings />
-              <ReactScan />
               {process.env.NODE_ENV === 'development' && <DevPanel />}
             </Suspense>
           </ServerConfigStoreProvider>
         </AppTheme>
-        <AntdV5MonkeyPatch />
       </Locale>
+      <AntdV5MonkeyPatch />
     </StyleRegistry>
   );
 };

@@ -6,35 +6,36 @@ const Anthropic: ModelProviderCard = {
     {
       contextWindowTokens: 200_000,
       description:
+        'Claude 4 Opus 是 Anthropic 最强大的下一代模型，具有卓越的推理能力和创造力，适用于最复杂的任务和高级分析。',
+      displayName: 'Claude 4 Opus',
+      enabled: true,
+      functionCall: true,
+      id: 'claude-opus-4-20250514',
+      maxOutput: 32_000,
+      releasedAt: '2025-05-14',
+      vision: true,
+    },
+    {
+      contextWindowTokens: 200_000,
+      description:
+        'Claude 4 Sonnet 提供了优异的性能和速度平衡，是新一代模型中的理想选择，适用于广泛的企业和创意任务。',
+      displayName: 'Claude 4 Sonnet',
+      enabled: true,
+      functionCall: true,
+      id: 'claude-sonnet-4-20250514',
+      maxOutput: 64_000,
+      releasedAt: '2025-05-14',
+      vision: true,
+    },
+    {
+      contextWindowTokens: 200_000,
+      description:
         'Claude 3.7 sonnet 是 Anthropic 最快的下一代模型。与 Claude 3 Haiku 相比，Claude 3.7 Sonnet 在各项技能上都有所提升，并在许多智力基准测试中超越了上一代最大的模型 Claude 3 Opus。',
       displayName: 'Claude 3.7 Sonnet',
       enabled: true,
       functionCall: true,
       id: 'claude-3-7-sonnet-20250219',
-      maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.1,
-        input: 1,
-        output: 5,
-        writeCacheInput: 1.25,
-      },
-      releasedAt: '2025-02-24',
-    },
-    {
-      contextWindowTokens: 200_000,
-      description:
-        'Claude 3.7 sonnet Extended thinking 是 Anthropic 最快的下一代模型。与 Claude 3 Haiku 相比，Claude 3.7 Sonnet 在各项技能上都有所提升，并在许多智力基准测试中超越了上一代最大的模型 Claude 3 Opus。',
-      displayName: 'Claude 3.7 Sonnet Extended thinking',
-      enabled: true,
-      functionCall: true,
-      id: 'claude-3-7-sonnet-20250219',
       maxOutput: 64_000,
-      pricing: {
-        cachedInput: 0.1,
-        input: 1,
-        output: 5,
-        writeCacheInput: 1.25,
-      },
       releasedAt: '2025-02-24',
     },
     {
@@ -46,12 +47,6 @@ const Anthropic: ModelProviderCard = {
       functionCall: true,
       id: 'claude-3-5-haiku-20241022',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.1,
-        input: 1,
-        output: 5,
-        writeCacheInput: 1.25,
-      },
       releasedAt: '2024-11-05',
     },
     {
@@ -63,12 +58,6 @@ const Anthropic: ModelProviderCard = {
       functionCall: true,
       id: 'claude-3-5-sonnet-20241022',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.3,
-        input: 3,
-        output: 15,
-        writeCacheInput: 3.75,
-      },
       releasedAt: '2024-10-22',
       vision: true,
     },
@@ -80,12 +69,6 @@ const Anthropic: ModelProviderCard = {
       functionCall: true,
       id: 'claude-3-5-sonnet-20240620',
       maxOutput: 8192,
-      pricing: {
-        cachedInput: 0.3,
-        input: 3,
-        output: 15,
-        writeCacheInput: 3.75,
-      },
       releasedAt: '2024-06-20',
       vision: true,
     },
@@ -97,10 +80,6 @@ const Anthropic: ModelProviderCard = {
       functionCall: true,
       id: 'claude-3-haiku-20240307',
       maxOutput: 4096,
-      pricing: {
-        input: 0.25,
-        output: 1.25,
-      },
       releasedAt: '2024-03-07',
       vision: true,
     },
@@ -112,10 +91,6 @@ const Anthropic: ModelProviderCard = {
       functionCall: true,
       id: 'claude-3-sonnet-20240229',
       maxOutput: 4096,
-      pricing: {
-        input: 3,
-        output: 15,
-      },
       releasedAt: '2024-02-29',
       vision: true,
     },
@@ -128,10 +103,6 @@ const Anthropic: ModelProviderCard = {
       functionCall: true,
       id: 'claude-3-opus-20240229',
       maxOutput: 4096,
-      pricing: {
-        input: 15,
-        output: 75,
-      },
       releasedAt: '2024-02-29',
       vision: true,
     },
@@ -142,10 +113,6 @@ const Anthropic: ModelProviderCard = {
       displayName: 'Claude 2.1',
       id: 'claude-2.1',
       maxOutput: 4096,
-      pricing: {
-        input: 8,
-        output: 24,
-      },
       releasedAt: '2023-11-21',
     },
     {
@@ -155,10 +122,6 @@ const Anthropic: ModelProviderCard = {
       displayName: 'Claude 2.0',
       id: 'claude-2.0',
       maxOutput: 4096,
-      pricing: {
-        input: 8,
-        output: 24,
-      },
       releasedAt: '2023-07-11',
     },
   ],
@@ -177,14 +140,9 @@ const Anthropic: ModelProviderCard = {
     proxyUrl: {
       placeholder: 'https://api.anthropic.com',
     },
+    responseAnimation: 'smooth',
     sdkType: 'anthropic',
     showModelFetcher: true,
-    smoothing: {
-      text: true,
-    },
-  },
-  smoothing: {
-    text: true,
   },
   url: 'https://anthropic.com',
 };

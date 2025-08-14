@@ -10,10 +10,6 @@ const XAI: ModelProviderCard = {
       enabled: true,
       functionCall: true,
       id: 'grok-beta',
-      pricing: {
-        input: 5,
-        output: 15,
-      },
     },
     {
       contextWindowTokens: 8192,
@@ -22,10 +18,6 @@ const XAI: ModelProviderCard = {
       enabled: true,
       functionCall: true,
       id: 'grok-vision-beta',
-      pricing: {
-        input: 5,
-        output: 15,
-      },
       vision: true,
     },
     {
@@ -35,10 +27,6 @@ const XAI: ModelProviderCard = {
       enabled: true,
       functionCall: true,
       id: 'grok-2-1212',
-      pricing: {
-        input: 2,
-        output: 10,
-      },
       releasedAt: '2024-12-12',
     },
     {
@@ -48,10 +36,6 @@ const XAI: ModelProviderCard = {
       enabled: true,
       functionCall: true,
       id: 'grok-2-vision-1212',
-      pricing: {
-        input: 2,
-        output: 10,
-      },
       releasedAt: '2024-12-12',
       vision: true,
     },
@@ -62,10 +46,7 @@ const XAI: ModelProviderCard = {
   id: 'xai',
   modelList: { showModelFetcher: true },
   modelsUrl: 'https://docs.x.ai/docs#models',
-  name: 'xAI',
-  proxyUrl: {
-    placeholder: 'https://api.x.ai/v1',
-  },
+  name: 'xAI (Grok)',
   settings: {
     proxyUrl: {
       placeholder: 'https://api.x.ai/v1',

@@ -1,14 +1,13 @@
 'use client';
 
 import { CheckCircleFilled } from '@ant-design/icons';
-import { Alert, Highlighter } from '@lobehub/ui';
-import { Button } from 'antd';
+import { TraceNameMap } from '@lobechat/types';
+import { Alert, Button, Highlighter } from '@lobehub/ui';
 import { useTheme } from 'antd-style';
 import { memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
-import { TraceNameMap } from '@/const/trace';
 import { useIsMobile } from '@/hooks/useIsMobile';
 import { useProviderName } from '@/hooks/useProviderName';
 import { chatService } from '@/services/chat';
@@ -29,7 +28,7 @@ const Error = memo<{ error: ChatMessageError }>(({ error }) => {
         banner
         extra={
           <Flexbox>
-            <Highlighter copyButtonSize={'small'} language={'json'} type={'pure'}>
+            <Highlighter actionIconSize={'small'} language={'json'} variant={'borderless'}>
               {JSON.stringify(error.body || error, null, 2)}
             </Highlighter>
           </Flexbox>

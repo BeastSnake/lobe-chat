@@ -11,10 +11,6 @@ const InternLM: ModelProviderCard = {
       functionCall: true,
       id: 'internlm2.5-latest',
       maxOutput: 4096,
-      pricing: {
-        input: 0,
-        output: 0,
-      },
     },
     {
       contextWindowTokens: 32_768,
@@ -23,10 +19,6 @@ const InternLM: ModelProviderCard = {
       functionCall: true,
       id: 'internlm2-pro-chat',
       maxOutput: 4096,
-      pricing: {
-        input: 0,
-        output: 0,
-      },
     },
   ],
   checkModel: 'internlm2.5-latest',
@@ -40,6 +32,9 @@ const InternLM: ModelProviderCard = {
   name: 'InternLM',
   settings: {
     disableBrowserRequest: true,
+    proxyUrl: {
+      placeholder: 'https://internlm-chat.intern-ai.org.cn/puyu/api/v1',
+    },
     sdkType: 'openai',
     showModelFetcher: true,
   },

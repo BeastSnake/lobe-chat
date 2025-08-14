@@ -3,26 +3,39 @@
 import { DraggablePanel, DraggablePanelContainer, type DraggablePanelProps } from '@lobehub/ui';
 import { createStyles, useResponsive } from 'antd-style';
 import isEqual from 'fast-deep-equal';
-import { parseAsBoolean, useQueryState } from 'nuqs';
 import { PropsWithChildren, memo, useEffect, useState } from 'react';
 
 import { withSuspense } from '@/components/withSuspense';
 import { FOLDER_WIDTH } from '@/const/layoutTokens';
+import { usePinnedAgentState } from '@/hooks/usePinnedAgentState';
 import { useGlobalStore } from '@/store/global';
 import { systemStatusSelectors } from '@/store/global/selectors';
+
+import { TOOGLE_PANEL_BUTTON_ID } from '../../features/TogglePanelButton';
 
 export const useStyles = createStyles(({ css, token }) => ({
   panel: css`
     height: 100%;
     color: ${token.colorTextSecondary};
-    background: ${token.colorBgContainer};
+    background: ${token.colorBgLayout};
+
+    #${TOOGLE_PANEL_BUTTON_ID} {
+      opacity: 0;
+      transition: opacity 0.15s ${token.motionEaseInOut};
+    }
+
+    &:hover {
+      #${TOOGLE_PANEL_BUTTON_ID} {
+        opacity: 1;
+      }
+    }
   `,
 }));
 
 const SessionPanel = memo<PropsWithChildren>(({ children }) => {
   const { md = true } = useResponsive();
 
-  const [isPinned] = useQueryState('pinned', parseAsBoolean);
+  const [isPinned] = usePinnedAgentState();
 
   const { styles } = useStyles();
   const [sessionsWidth, sessionExpandable, updatePreference] = useGlobalStore((s) => [

@@ -1,9 +1,12 @@
+import { isDesktop } from '@/const/version';
 import { metadataModule } from '@/server/metadata';
 import { translation } from '@/server/translation';
 import { DynamicLayoutProps } from '@/types/next';
 import { RouteVariants } from '@/utils/server/routeVariants';
 
-import HotkeySetting from './features/HotkeySetting';
+import Conversation from './features/Conversation';
+import Desktop from './features/Desktop';
+import Essential from './features/Essential';
 
 export const generateMetadata = async (props: DynamicLayoutProps) => {
   const locale = await RouteVariants.getLocale(props);
@@ -16,7 +19,13 @@ export const generateMetadata = async (props: DynamicLayoutProps) => {
 };
 
 const Page = () => {
-  return <HotkeySetting />;
+  return (
+    <>
+      {isDesktop && <Desktop />}
+      <Essential />
+      <Conversation />
+    </>
+  );
 };
 
 Page.displayName = 'HotkeySetting';
