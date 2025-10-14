@@ -2,6 +2,4129 @@
 
 # Changelog
 
+### [Version 1.137.4](https://github.com/lobehub/lobe-chat/compare/v1.137.3...v1.137.4)
+
+<sup>Released on **2025-10-14**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Prevent Vertex AI JSON credentials from being split by comma.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Prevent Vertex AI JSON credentials from being split by comma, closes [#9703](https://github.com/lobehub/lobe-chat/issues/9703) [#9477](https://github.com/lobehub/lobe-chat/issues/9477) ([189081d](https://github.com/lobehub/lobe-chat/commit/189081d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.137.3](https://github.com/lobehub/lobe-chat/compare/v1.137.2...v1.137.3)
+
+<sup>Released on **2025-10-14**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix mcp server connect issue and refactor web search implement, fix tools calling long name length >64 issue.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix mcp server connect issue and refactor web search implement, closes [#9694](https://github.com/lobehub/lobe-chat/issues/9694) ([15ebcb4](https://github.com/lobehub/lobe-chat/commit/15ebcb4))
+- **misc**: Fix tools calling long name length >64 issue, closes [#9697](https://github.com/lobehub/lobe-chat/issues/9697) ([cb98604](https://github.com/lobehub/lobe-chat/commit/cb98604))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.137.2](https://github.com/lobehub/lobe-chat/compare/v1.137.1...v1.137.2)
+
+<sup>Released on **2025-10-14**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix the Worker URL cross-origin issue.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix the Worker URL cross-origin issue, closes [#9624](https://github.com/lobehub/lobe-chat/issues/9624) ([d379112](https://github.com/lobehub/lobe-chat/commit/d379112))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.137.1](https://github.com/lobehub/lobe-chat/compare/v1.137.0...v1.137.1)
+
+<sup>Released on **2025-10-14**</sup>
+
+#### 💄 Styles
+
+- **misc**: Change the user chatItem maxWidth should use flex 1.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Change the user chatItem maxWidth should use flex 1, closes [#9689](https://github.com/lobehub/lobe-chat/issues/9689) ([cfd5221](https://github.com/lobehub/lobe-chat/commit/cfd5221))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.137.0](https://github.com/lobehub/lobe-chat/compare/v1.136.13...v1.137.0)
+
+<sup>Released on **2025-10-12**</sup>
+
+#### ✨ Features
+
+- **misc**: Add new setting for default image num.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add new setting for default image num, closes [#9618](https://github.com/lobehub/lobe-chat/issues/9618) ([de7368b](https://github.com/lobehub/lobe-chat/commit/de7368b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.13](https://github.com/lobehub/lobe-chat/compare/v1.136.12...v1.136.13)
+
+<sup>Released on **2025-10-12**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix input cannot send markdown.
+
+#### 💄 Styles
+
+- **misc**: Optimize OpenRouter modelFetch endpoint, update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix input cannot send markdown, closes [#9674](https://github.com/lobehub/lobe-chat/issues/9674) ([2518d7e](https://github.com/lobehub/lobe-chat/commit/2518d7e))
+
+#### Styles
+
+- **misc**: Optimize OpenRouter modelFetch endpoint, closes [#9671](https://github.com/lobehub/lobe-chat/issues/9671) ([0038a64](https://github.com/lobehub/lobe-chat/commit/0038a64))
+- **misc**: Update i18n, closes [#9665](https://github.com/lobehub/lobe-chat/issues/9665) ([02096ea](https://github.com/lobehub/lobe-chat/commit/02096ea))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.12](https://github.com/lobehub/lobe-chat/compare/v1.136.11...v1.136.12)
+
+<sup>Released on **2025-10-11**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add more AWS regions, Update infini-ai models.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add more AWS regions, closes [#9644](https://github.com/lobehub/lobe-chat/issues/9644) ([4a82daf](https://github.com/lobehub/lobe-chat/commit/4a82daf))
+- **misc**: Update infini-ai models, closes [#9646](https://github.com/lobehub/lobe-chat/issues/9646) ([5274225](https://github.com/lobehub/lobe-chat/commit/5274225))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.11](https://github.com/lobehub/lobe-chat/compare/v1.136.10...v1.136.11)
+
+<sup>Released on **2025-10-11**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add capability inference for web search, image output and video recognition in model parsing and update UI form items to support search, imageOutput and video abilities.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add capability inference for web search, image output and video recognition in model parsing and update UI form items to support search, imageOutput and video abilities, closes [#9022](https://github.com/lobehub/lobe-chat/issues/9022) ([4e44569](https://github.com/lobehub/lobe-chat/commit/4e44569))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.10](https://github.com/lobehub/lobe-chat/compare/v1.136.9...v1.136.10)
+
+<sup>Released on **2025-10-11**</sup>
+
+#### 💄 Styles
+
+- **misc**: Improve search experience.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Improve search experience, closes [#9661](https://github.com/lobehub/lobe-chat/issues/9661) ([8624f84](https://github.com/lobehub/lobe-chat/commit/8624f84))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.9](https://github.com/lobehub/lobe-chat/compare/v1.136.8...v1.136.9)
+
+<sup>Released on **2025-10-11**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add lab to support disable/enable rich text.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add lab to support disable/enable rich text, closes [#9652](https://github.com/lobehub/lobe-chat/issues/9652) ([658c294](https://github.com/lobehub/lobe-chat/commit/658c294))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.8](https://github.com/lobehub/lobe-chat/compare/v1.136.7...v1.136.8)
+
+<sup>Released on **2025-10-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **provider**: Add deepseek-v3.1-terminus to THINKING_MODELS.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **provider**: Add deepseek-v3.1-terminus to THINKING_MODELS, closes [#9653](https://github.com/lobehub/lobe-chat/issues/9653) [#9648](https://github.com/lobehub/lobe-chat/issues/9648) ([e9b5c69](https://github.com/lobehub/lobe-chat/commit/e9b5c69))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.7](https://github.com/lobehub/lobe-chat/compare/v1.136.6...v1.136.7)
+
+<sup>Released on **2025-10-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Disable rich text in markdown editor.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Disable rich text in markdown editor, closes [#9637](https://github.com/lobehub/lobe-chat/issues/9637) ([9349ce2](https://github.com/lobehub/lobe-chat/commit/9349ce2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.6](https://github.com/lobehub/lobe-chat/compare/v1.136.5...v1.136.6)
+
+<sup>Released on **2025-10-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **bedrock**: Add parameter conflict handling for Claude 4+ models.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **bedrock**: Add parameter conflict handling for Claude 4+ models, closes [#9627](https://github.com/lobehub/lobe-chat/issues/9627) [#9523](https://github.com/lobehub/lobe-chat/issues/9523) ([54b6217](https://github.com/lobehub/lobe-chat/commit/54b6217))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.5](https://github.com/lobehub/lobe-chat/compare/v1.136.4...v1.136.5)
+
+<sup>Released on **2025-10-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **plugin-store**: Fix search functionality for old plugin store.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **plugin-store**: Fix search functionality for old plugin store, closes [#9651](https://github.com/lobehub/lobe-chat/issues/9651) [#9645](https://github.com/lobehub/lobe-chat/issues/9645) ([522fc09](https://github.com/lobehub/lobe-chat/commit/522fc09))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.4](https://github.com/lobehub/lobe-chat/compare/v1.136.3...v1.136.4)
+
+<sup>Released on **2025-10-10**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Add 'gemini-2.5-flash-image' to disabled models Thinking.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Add 'gemini-2.5-flash-image' to disabled models Thinking, closes [#9633](https://github.com/lobehub/lobe-chat/issues/9633) ([771b585](https://github.com/lobehub/lobe-chat/commit/771b585))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.3](https://github.com/lobehub/lobe-chat/compare/v1.136.2...v1.136.3)
+
+<sup>Released on **2025-10-10**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add delete & regenerate hotkeys.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add delete & regenerate hotkeys, closes [#9538](https://github.com/lobehub/lobe-chat/issues/9538) ([d948580](https://github.com/lobehub/lobe-chat/commit/d948580))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.2](https://github.com/lobehub/lobe-chat/compare/v1.136.1...v1.136.2)
+
+<sup>Released on **2025-10-10**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9625](https://github.com/lobehub/lobe-chat/issues/9625) ([70d356d](https://github.com/lobehub/lobe-chat/commit/70d356d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.136.1](https://github.com/lobehub/lobe-chat/compare/v1.136.0...v1.136.1)
+
+<sup>Released on **2025-10-09**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.136.0](https://github.com/lobehub/lobe-chat/compare/v1.135.6...v1.136.0)
+
+<sup>Released on **2025-10-09**</sup>
+
+#### ✨ Features
+
+- **misc**: Add new provider Cerebras.
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix standalone plugin rerender issue.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add new provider Cerebras, closes [#9559](https://github.com/lobehub/lobe-chat/issues/9559) ([9cceaad](https://github.com/lobehub/lobe-chat/commit/9cceaad))
+
+#### What's fixed
+
+- **misc**: Fix standalone plugin rerender issue, closes [#9611](https://github.com/lobehub/lobe-chat/issues/9611) [#9396](https://github.com/lobehub/lobe-chat/issues/9396) ([7ab30fc](https://github.com/lobehub/lobe-chat/commit/7ab30fc))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.135.6](https://github.com/lobehub/lobe-chat/compare/v1.135.5...v1.135.6)
+
+<sup>Released on **2025-10-08**</sup>
+
+#### 🐛 Bug Fixes
+
+- **desktop**: Macos26 small icon.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **desktop**: Macos26 small icon, closes [#9421](https://github.com/lobehub/lobe-chat/issues/9421) ([ca03342](https://github.com/lobehub/lobe-chat/commit/ca03342))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.135.5](https://github.com/lobehub/lobe-chat/compare/v1.135.4...v1.135.5)
+
+<sup>Released on **2025-10-08**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9602](https://github.com/lobehub/lobe-chat/issues/9602) ([ed267a4](https://github.com/lobehub/lobe-chat/commit/ed267a4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.135.4](https://github.com/lobehub/lobe-chat/compare/v1.135.3...v1.135.4)
+
+<sup>Released on **2025-10-07**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor chat item.
+
+#### 💄 Styles
+
+- **misc**: Add GPT-5 pro model.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor chat item, closes [#9599](https://github.com/lobehub/lobe-chat/issues/9599) ([1f36158](https://github.com/lobehub/lobe-chat/commit/1f36158))
+
+#### Styles
+
+- **misc**: Add GPT-5 pro model, closes [#9594](https://github.com/lobehub/lobe-chat/issues/9594) ([775f30b](https://github.com/lobehub/lobe-chat/commit/775f30b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.135.3](https://github.com/lobehub/lobe-chat/compare/v1.135.2...v1.135.3)
+
+<sup>Released on **2025-10-07**</sup>
+
+#### 💄 Styles
+
+- **misc**: Improve Korean translate.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Improve Korean translate, closes [#9597](https://github.com/lobehub/lobe-chat/issues/9597) ([319fbfb](https://github.com/lobehub/lobe-chat/commit/319fbfb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.135.2](https://github.com/lobehub/lobe-chat/compare/v1.135.1...v1.135.2)
+
+<sup>Released on **2025-10-06**</sup>
+
+#### 💄 Styles
+
+- **image**: Optimize UX and fix fal pricing.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **image**: Optimize UX and fix fal pricing, closes [#9592](https://github.com/lobehub/lobe-chat/issues/9592) ([dddbfcd](https://github.com/lobehub/lobe-chat/commit/dddbfcd))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.135.1](https://github.com/lobehub/lobe-chat/compare/v1.135.0...v1.135.1)
+
+<sup>Released on **2025-10-06**</sup>
+
+#### 💄 Styles
+
+- **misc**: Improve styles and fix tools calling condition.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Improve styles and fix tools calling condition, closes [#9591](https://github.com/lobehub/lobe-chat/issues/9591) ([1695f2f](https://github.com/lobehub/lobe-chat/commit/1695f2f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.135.0](https://github.com/lobehub/lobe-chat/compare/v1.134.7...v1.135.0)
+
+<sup>Released on **2025-10-06**</sup>
+
+#### ✨ Features
+
+- **misc**: Huanyuan text-to-image 3.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Huanyuan text-to-image 3, closes [#9589](https://github.com/lobehub/lobe-chat/issues/9589) ([1dd0e5e](https://github.com/lobehub/lobe-chat/commit/1dd0e5e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.134.7](https://github.com/lobehub/lobe-chat/compare/v1.134.6...v1.134.7)
+
+<sup>Released on **2025-10-06**</sup>
+
+#### 🐛 Bug Fixes
+
+- **security**: Sanitize Azure provider error responses to prevent API key exposure.
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **security**: Sanitize Azure provider error responses to prevent API key exposure, closes [#9583](https://github.com/lobehub/lobe-chat/issues/9583) ([af59bfe](https://github.com/lobehub/lobe-chat/commit/af59bfe))
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9580](https://github.com/lobehub/lobe-chat/issues/9580) ([c0974ea](https://github.com/lobehub/lobe-chat/commit/c0974ea))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.134.6](https://github.com/lobehub/lobe-chat/compare/v1.134.5...v1.134.6)
+
+<sup>Released on **2025-10-05**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.134.5](https://github.com/lobehub/lobe-chat/compare/v1.134.4...v1.134.5)
+
+<sup>Released on **2025-10-05**</sup>
+
+#### 🐛 Bug Fixes
+
+- **database**: Prevent empty array insertion in aiModel batch operations.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **database**: Prevent empty array insertion in aiModel batch operations, closes [#9491](https://github.com/lobehub/lobe-chat/issues/9491) [#9429](https://github.com/lobehub/lobe-chat/issues/9429) [#9429](https://github.com/lobehub/lobe-chat/issues/9429) ([eb50c8b](https://github.com/lobehub/lobe-chat/commit/eb50c8b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.134.4](https://github.com/lobehub/lobe-chat/compare/v1.134.3...v1.134.4)
+
+<sup>Released on **2025-10-05**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add promptfoo to improve prompts quality.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add promptfoo to improve prompts quality, closes [#9568](https://github.com/lobehub/lobe-chat/issues/9568) ([33874c2](https://github.com/lobehub/lobe-chat/commit/33874c2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.134.3](https://github.com/lobehub/lobe-chat/compare/v1.134.2...v1.134.3)
+
+<sup>Released on **2025-10-05**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Type not preserved when model is sorted.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Type not preserved when model is sorted, closes [#9561](https://github.com/lobehub/lobe-chat/issues/9561) ([5fe2518](https://github.com/lobehub/lobe-chat/commit/5fe2518))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.134.2](https://github.com/lobehub/lobe-chat/compare/v1.134.1...v1.134.2)
+
+<sup>Released on **2025-10-05**</sup>
+
+#### 💄 Styles
+
+- **misc**: Allow switching model `type`.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Allow switching model `type`, closes [#9529](https://github.com/lobehub/lobe-chat/issues/9529) ([9b62685](https://github.com/lobehub/lobe-chat/commit/9b62685))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.134.1](https://github.com/lobehub/lobe-chat/compare/v1.134.0...v1.134.1)
+
+<sup>Released on **2025-10-05**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9546](https://github.com/lobehub/lobe-chat/issues/9546) ([ed8174f](https://github.com/lobehub/lobe-chat/commit/ed8174f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.134.0](https://github.com/lobehub/lobe-chat/compare/v1.133.6...v1.134.0)
+
+<sup>Released on **2025-10-04**</sup>
+
+#### ✨ Features
+
+- **misc**: Support double-click to open multi agent window on the desktop.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Support double-click to open multi agent window on the desktop, closes [#9331](https://github.com/lobehub/lobe-chat/issues/9331) ([a060901](https://github.com/lobehub/lobe-chat/commit/a060901))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.133.6](https://github.com/lobehub/lobe-chat/compare/v1.133.5...v1.133.6)
+
+<sup>Released on **2025-10-04**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: `type` not preserved when model is disabled or sorted.
+
+#### 💄 Styles
+
+- **misc**: Nano banana support `aspect_ratio`.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: `type` not preserved when model is disabled or sorted, closes [#9530](https://github.com/lobehub/lobe-chat/issues/9530) ([476b897](https://github.com/lobehub/lobe-chat/commit/476b897))
+
+#### Styles
+
+- **misc**: Nano banana support `aspect_ratio`, closes [#9528](https://github.com/lobehub/lobe-chat/issues/9528) ([ae3ed6e](https://github.com/lobehub/lobe-chat/commit/ae3ed6e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.133.5](https://github.com/lobehub/lobe-chat/compare/v1.133.4...v1.133.5)
+
+<sup>Released on **2025-10-04**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Custom provider fails when client requests are enabled.
+
+#### 💄 Styles
+
+- **misc**: Optimized `extendParams` UI, update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Custom provider fails when client requests are enabled, closes [#9534](https://github.com/lobehub/lobe-chat/issues/9534) ([8b12fdf](https://github.com/lobehub/lobe-chat/commit/8b12fdf))
+
+#### Styles
+
+- **misc**: Optimized `extendParams` UI, closes [#9457](https://github.com/lobehub/lobe-chat/issues/9457) ([582f6d1](https://github.com/lobehub/lobe-chat/commit/582f6d1))
+- **misc**: Update i18n, closes [#9514](https://github.com/lobehub/lobe-chat/issues/9514) ([6430f57](https://github.com/lobehub/lobe-chat/commit/6430f57))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.133.4](https://github.com/lobehub/lobe-chat/compare/v1.133.3...v1.133.4)
+
+<sup>Released on **2025-10-01**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: OllamaCloud error.
+
+#### 💄 Styles
+
+- **misc**: Fix chat minimap overflow.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: OllamaCloud error, closes [#9481](https://github.com/lobehub/lobe-chat/issues/9481) ([55c45a5](https://github.com/lobehub/lobe-chat/commit/55c45a5))
+
+#### Styles
+
+- **misc**: Fix chat minimap overflow, closes [#9507](https://github.com/lobehub/lobe-chat/issues/9507) ([d835c33](https://github.com/lobehub/lobe-chat/commit/d835c33))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.133.3](https://github.com/lobehub/lobe-chat/compare/v1.133.2...v1.133.3)
+
+<sup>Released on **2025-10-01**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor a `ssrf-safe-fetch` module.
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix frontend random API key config not work.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor a `ssrf-safe-fetch` module, closes [#9474](https://github.com/lobehub/lobe-chat/issues/9474) ([92da716](https://github.com/lobehub/lobe-chat/commit/92da716))
+
+#### What's fixed
+
+- **misc**: Fix frontend random API key config not work, closes [#9477](https://github.com/lobehub/lobe-chat/issues/9477) [#9255](https://github.com/lobehub/lobe-chat/issues/9255) ([a194d48](https://github.com/lobehub/lobe-chat/commit/a194d48))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.133.2](https://github.com/lobehub/lobe-chat/compare/v1.133.1...v1.133.2)
+
+<sup>Released on **2025-09-30**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add minimap to chat list for quick navigation.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add minimap to chat list for quick navigation, closes [#9470](https://github.com/lobehub/lobe-chat/issues/9470) ([8db47eb](https://github.com/lobehub/lobe-chat/commit/8db47eb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.133.1](https://github.com/lobehub/lobe-chat/compare/v1.133.0...v1.133.1)
+
+<sup>Released on **2025-09-30**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9480](https://github.com/lobehub/lobe-chat/issues/9480) ([dfeb42c](https://github.com/lobehub/lobe-chat/commit/dfeb42c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.133.0](https://github.com/lobehub/lobe-chat/compare/v1.132.19...v1.133.0)
+
+<sup>Released on **2025-09-29**</sup>
+
+#### ✨ Features
+
+- **misc**: Add builtin Python plugin, add Claude Sonnet 4.5 model to AI chat models.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add builtin Python plugin, closes [#8873](https://github.com/lobehub/lobe-chat/issues/8873) ([fa6ef94](https://github.com/lobehub/lobe-chat/commit/fa6ef94))
+- **misc**: Add Claude Sonnet 4.5 model to AI chat models, closes [#9476](https://github.com/lobehub/lobe-chat/issues/9476) ([a30a65c](https://github.com/lobehub/lobe-chat/commit/a30a65c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.19](https://github.com/lobehub/lobe-chat/compare/v1.132.18...v1.132.19)
+
+<sup>Released on **2025-09-29**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.18](https://github.com/lobehub/lobe-chat/compare/v1.132.17...v1.132.18)
+
+<sup>Released on **2025-09-28**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Refactor tools-engine and fix search token count.
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Refactor tools-engine and fix search token count, closes [#9448](https://github.com/lobehub/lobe-chat/issues/9448) ([e82d4b7](https://github.com/lobehub/lobe-chat/commit/e82d4b7))
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9449](https://github.com/lobehub/lobe-chat/issues/9449) ([b04a5d7](https://github.com/lobehub/lobe-chat/commit/b04a5d7))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.17](https://github.com/lobehub/lobe-chat/compare/v1.132.16...v1.132.17)
+
+<sup>Released on **2025-09-27**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix input empty group name.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix input empty group name, closes [#9441](https://github.com/lobehub/lobe-chat/issues/9441) ([f653ce1](https://github.com/lobehub/lobe-chat/commit/f653ce1))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.16](https://github.com/lobehub/lobe-chat/compare/v1.132.15...v1.132.16)
+
+<sup>Released on **2025-09-26**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Resolve qwen-image-edit imageUrls conversion issue.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Resolve qwen-image-edit imageUrls conversion issue, closes [#9414](https://github.com/lobehub/lobe-chat/issues/9414) ([ec5af1b](https://github.com/lobehub/lobe-chat/commit/ec5af1b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.15](https://github.com/lobehub/lobe-chat/compare/v1.132.14...v1.132.15)
+
+<sup>Released on **2025-09-25**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Add proxyUrl configuration for NEW API provider.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Add proxyUrl configuration for NEW API provider, closes [#9426](https://github.com/lobehub/lobe-chat/issues/9426) [#9420](https://github.com/lobehub/lobe-chat/issues/9420) ([e35e378](https://github.com/lobehub/lobe-chat/commit/e35e378))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.14](https://github.com/lobehub/lobe-chat/compare/v1.132.13...v1.132.14)
+
+<sup>Released on **2025-09-25**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9413](https://github.com/lobehub/lobe-chat/issues/9413) ([4ea45b1](https://github.com/lobehub/lobe-chat/commit/4ea45b1))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.13](https://github.com/lobehub/lobe-chat/compare/v1.132.12...v1.132.13)
+
+<sup>Released on **2025-09-25**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.12](https://github.com/lobehub/lobe-chat/compare/v1.132.11...v1.132.12)
+
+<sup>Released on **2025-09-25**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Slove setting proxy page with style error.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Slove setting proxy page with style error, closes [#9417](https://github.com/lobehub/lobe-chat/issues/9417) ([6d3e5d1](https://github.com/lobehub/lobe-chat/commit/6d3e5d1))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.11](https://github.com/lobehub/lobe-chat/compare/v1.132.10...v1.132.11)
+
+<sup>Released on **2025-09-24**</sup>
+
+#### 💄 Styles
+
+- **misc**: Enhanced Nvidia NIM chat experience, OpenAI models in AiHubMix use Responses API.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Enhanced Nvidia NIM chat experience, closes [#9408](https://github.com/lobehub/lobe-chat/issues/9408) ([13e936f](https://github.com/lobehub/lobe-chat/commit/13e936f))
+- **misc**: OpenAI models in AiHubMix use Responses API, closes [#9251](https://github.com/lobehub/lobe-chat/issues/9251) ([8636fe4](https://github.com/lobehub/lobe-chat/commit/8636fe4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.10](https://github.com/lobehub/lobe-chat/compare/v1.132.9...v1.132.10)
+
+<sup>Released on **2025-09-24**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Macos desktop sign.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Macos desktop sign, closes [#9400](https://github.com/lobehub/lobe-chat/issues/9400) ([4349ad9](https://github.com/lobehub/lobe-chat/commit/4349ad9))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.9](https://github.com/lobehub/lobe-chat/compare/v1.132.8...v1.132.9)
+
+<sup>Released on **2025-09-23**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.8](https://github.com/lobehub/lobe-chat/compare/v1.132.7...v1.132.8)
+
+<sup>Released on **2025-09-23**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor all `@/types` in model runtime to `@lobechat/types`.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor all `@/types` in model runtime to `@lobechat/types`, closes [#9383](https://github.com/lobehub/lobe-chat/issues/9383) ([b050bd7](https://github.com/lobehub/lobe-chat/commit/b050bd7))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.7](https://github.com/lobehub/lobe-chat/compare/v1.132.6...v1.132.7)
+
+<sup>Released on **2025-09-23**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.6](https://github.com/lobehub/lobe-chat/compare/v1.132.5...v1.132.6)
+
+<sup>Released on **2025-09-23**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.5](https://github.com/lobehub/lobe-chat/compare/v1.132.4...v1.132.5)
+
+<sup>Released on **2025-09-22**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Move the ModelProvider to model-bank.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Move the ModelProvider to model-bank, closes [#9374](https://github.com/lobehub/lobe-chat/issues/9374) ([d9a4361](https://github.com/lobehub/lobe-chat/commit/d9a4361))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.4](https://github.com/lobehub/lobe-chat/compare/v1.132.3...v1.132.4)
+
+<sup>Released on **2025-09-22**</sup>
+
+#### 💄 Styles
+
+- **misc**: Enable thinkingBudget control for Vertex Gemini 2.5 models, update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Enable thinkingBudget control for Vertex Gemini 2.5 models, closes [#8223](https://github.com/lobehub/lobe-chat/issues/8223) ([c665646](https://github.com/lobehub/lobe-chat/commit/c665646))
+- **misc**: Update i18n, closes [#9363](https://github.com/lobehub/lobe-chat/issues/9363) ([785d5d7](https://github.com/lobehub/lobe-chat/commit/785d5d7))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.3](https://github.com/lobehub/lobe-chat/compare/v1.132.2...v1.132.3)
+
+<sup>Released on **2025-09-21**</sup>
+
+#### 💄 Styles
+
+- **misc**: Added `AUTH_MICROSOFT_ENTRA_ID_BASE_URL` routing.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Added `AUTH_MICROSOFT_ENTRA_ID_BASE_URL` routing, closes [#9293](https://github.com/lobehub/lobe-chat/issues/9293) ([78a2f9e](https://github.com/lobehub/lobe-chat/commit/78a2f9e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.2](https://github.com/lobehub/lobe-chat/compare/v1.132.1...v1.132.2)
+
+<sup>Released on **2025-09-21**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix non stream mode in OpenAI Response API.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix non stream mode in OpenAI Response API, closes [#9360](https://github.com/lobehub/lobe-chat/issues/9360) ([1c61b21](https://github.com/lobehub/lobe-chat/commit/1c61b21))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.132.1](https://github.com/lobehub/lobe-chat/compare/v1.132.0...v1.132.1)
+
+<sup>Released on **2025-09-21**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix missing provider in server message.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix missing provider in server message, closes [#9361](https://github.com/lobehub/lobe-chat/issues/9361) ([4099dfd](https://github.com/lobehub/lobe-chat/commit/4099dfd))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.132.0](https://github.com/lobehub/lobe-chat/compare/v1.131.4...v1.132.0)
+
+<sup>Released on **2025-09-21**</sup>
+
+#### ✨ Features
+
+- **misc**: Support google video understanding.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Support google video understanding, closes [#8761](https://github.com/lobehub/lobe-chat/issues/8761) ([f02d43b](https://github.com/lobehub/lobe-chat/commit/f02d43b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.131.4](https://github.com/lobehub/lobe-chat/compare/v1.131.3...v1.131.4)
+
+<sup>Released on **2025-09-21**</sup>
+
+#### 💄 Styles
+
+- **misc**: Enhanced AkashChat experience.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Enhanced AkashChat experience, closes [#9330](https://github.com/lobehub/lobe-chat/issues/9330) ([47ec2d8](https://github.com/lobehub/lobe-chat/commit/47ec2d8))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.131.3](https://github.com/lobehub/lobe-chat/compare/v1.131.2...v1.131.3)
+
+<sup>Released on **2025-09-21**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Update Responses search tool to web_search.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Update Responses search tool to web_search, closes [#9354](https://github.com/lobehub/lobe-chat/issues/9354) ([58d34ff](https://github.com/lobehub/lobe-chat/commit/58d34ff))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.131.2](https://github.com/lobehub/lobe-chat/compare/v1.131.1...v1.131.2)
+
+<sup>Released on **2025-09-21**</sup>
+
+#### 💄 Styles
+
+- **misc**: Use ID as name if provider name is empty.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Use ID as name if provider name is empty, closes [#9356](https://github.com/lobehub/lobe-chat/issues/9356) ([7f60544](https://github.com/lobehub/lobe-chat/commit/7f60544))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.131.1](https://github.com/lobehub/lobe-chat/compare/v1.131.0...v1.131.1)
+
+<sup>Released on **2025-09-21**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Improve codebase.
+
+#### 💄 Styles
+
+- **misc**: Extend custom provider runtime options, Optimized modelFetch for Vercel AI Gateway, update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Improve codebase, closes [#9353](https://github.com/lobehub/lobe-chat/issues/9353) ([7dc000e](https://github.com/lobehub/lobe-chat/commit/7dc000e))
+
+#### Styles
+
+- **misc**: Extend custom provider runtime options, closes [#9278](https://github.com/lobehub/lobe-chat/issues/9278) ([a94e881](https://github.com/lobehub/lobe-chat/commit/a94e881))
+- **misc**: Optimized modelFetch for Vercel AI Gateway, closes [#9342](https://github.com/lobehub/lobe-chat/issues/9342) ([45b7a43](https://github.com/lobehub/lobe-chat/commit/45b7a43))
+- **misc**: Update i18n, closes [#9338](https://github.com/lobehub/lobe-chat/issues/9338) ([d2ff75c](https://github.com/lobehub/lobe-chat/commit/d2ff75c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.131.0](https://github.com/lobehub/lobe-chat/compare/v1.130.1...v1.131.0)
+
+<sup>Released on **2025-09-19**</sup>
+
+#### ✨ Features
+
+- **misc**: Qwen provider add qwen-image-edit model support.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Qwen provider add qwen-image-edit model support, closes [#9311](https://github.com/lobehub/lobe-chat/issues/9311) ([a0074fc](https://github.com/lobehub/lobe-chat/commit/a0074fc))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.130.1](https://github.com/lobehub/lobe-chat/compare/v1.130.0...v1.130.1)
+
+<sup>Released on **2025-09-18**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix oidc open direct issue.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix oidc open direct issue, closes [#9315](https://github.com/lobehub/lobe-chat/issues/9315) ([70f52a3](https://github.com/lobehub/lobe-chat/commit/70f52a3))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.130.0](https://github.com/lobehub/lobe-chat/compare/v1.129.4...v1.130.0)
+
+<sup>Released on **2025-09-18**</sup>
+
+#### ✨ Features
+
+- **misc**: Add scroll support for pinned assistants using ScrollShadow.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add scroll support for pinned assistants using ScrollShadow, closes [#9319](https://github.com/lobehub/lobe-chat/issues/9319) [#9316](https://github.com/lobehub/lobe-chat/issues/9316) ([54c0ac4](https://github.com/lobehub/lobe-chat/commit/54c0ac4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.129.4](https://github.com/lobehub/lobe-chat/compare/v1.129.3...v1.129.4)
+
+<sup>Released on **2025-09-18**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix svg xss issue.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix svg xss issue, closes [#9313](https://github.com/lobehub/lobe-chat/issues/9313) ([9f044ed](https://github.com/lobehub/lobe-chat/commit/9f044ed))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.129.3](https://github.com/lobehub/lobe-chat/compare/v1.129.2...v1.129.3)
+
+<sup>Released on **2025-09-17**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Add qwen provider support for image-edit model.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Add qwen provider support for image-edit model, closes [#9277](https://github.com/lobehub/lobe-chat/issues/9277) [#9184](https://github.com/lobehub/lobe-chat/issues/9184) ([e137b33](https://github.com/lobehub/lobe-chat/commit/e137b33))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.129.2](https://github.com/lobehub/lobe-chat/compare/v1.129.1...v1.129.2)
+
+<sup>Released on **2025-09-17**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Improve db migrations sql.
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Improve db migrations sql, closes [#9295](https://github.com/lobehub/lobe-chat/issues/9295) ([96ff5aa](https://github.com/lobehub/lobe-chat/commit/96ff5aa))
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9294](https://github.com/lobehub/lobe-chat/issues/9294) ([c018f3d](https://github.com/lobehub/lobe-chat/commit/c018f3d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.129.1](https://github.com/lobehub/lobe-chat/compare/v1.129.0...v1.129.1)
+
+<sup>Released on **2025-09-16**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Improve db sql performance.
+
+#### 💄 Styles
+
+- **misc**: Update SiliconCloud reasoning models.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Improve db sql performance, closes [#9283](https://github.com/lobehub/lobe-chat/issues/9283) ([cee555a](https://github.com/lobehub/lobe-chat/commit/cee555a))
+
+#### Styles
+
+- **misc**: Update SiliconCloud reasoning models, closes [#9287](https://github.com/lobehub/lobe-chat/issues/9287) ([b47bb5b](https://github.com/lobehub/lobe-chat/commit/b47bb5b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.129.0](https://github.com/lobehub/lobe-chat/compare/v1.128.10...v1.129.0)
+
+<sup>Released on **2025-09-16**</sup>
+
+#### ✨ Features
+
+- **misc**: Support Vercel AI Gateway provider.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Support Vercel AI Gateway provider, closes [#8883](https://github.com/lobehub/lobe-chat/issues/8883) ([5a4b0fd](https://github.com/lobehub/lobe-chat/commit/5a4b0fd))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.10](https://github.com/lobehub/lobe-chat/compare/v1.128.9...v1.128.10)
+
+<sup>Released on **2025-09-16**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix azure ai runtime error.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix azure ai runtime error, closes [#9276](https://github.com/lobehub/lobe-chat/issues/9276) ([c21c14e](https://github.com/lobehub/lobe-chat/commit/c21c14e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.9](https://github.com/lobehub/lobe-chat/compare/v1.128.8...v1.128.9)
+
+<sup>Released on **2025-09-15**</sup>
+
+#### 💄 Styles
+
+- **misc**: Improve error handle with agent config, support `.doc` file parse.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Improve error handle with agent config, closes [#9263](https://github.com/lobehub/lobe-chat/issues/9263) ([6656217](https://github.com/lobehub/lobe-chat/commit/6656217))
+- **misc**: Support `.doc` file parse, closes [#8182](https://github.com/lobehub/lobe-chat/issues/8182) ([ed42753](https://github.com/lobehub/lobe-chat/commit/ed42753))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.8](https://github.com/lobehub/lobe-chat/compare/v1.128.7...v1.128.8)
+
+<sup>Released on **2025-09-15**</sup>
+
+#### 💄 Styles
+
+- **misc**: Enable toggling search on/off via search button click & historyCount button.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Enable toggling search on/off via search button click & historyCount button, closes [#9173](https://github.com/lobehub/lobe-chat/issues/9173) ([240c7b7](https://github.com/lobehub/lobe-chat/commit/240c7b7))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.7](https://github.com/lobehub/lobe-chat/compare/v1.128.6...v1.128.7)
+
+<sup>Released on **2025-09-14**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.6](https://github.com/lobehub/lobe-chat/compare/v1.128.5...v1.128.6)
+
+<sup>Released on **2025-09-14**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9243](https://github.com/lobehub/lobe-chat/issues/9243) ([04764ad](https://github.com/lobehub/lobe-chat/commit/04764ad))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.5](https://github.com/lobehub/lobe-chat/compare/v1.128.4...v1.128.5)
+
+<sup>Released on **2025-09-13**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Google stream error unable to abort request.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Google stream error unable to abort request, closes [#9180](https://github.com/lobehub/lobe-chat/issues/9180) ([78eaead](https://github.com/lobehub/lobe-chat/commit/78eaead))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.4](https://github.com/lobehub/lobe-chat/compare/v1.128.3...v1.128.4)
+
+<sup>Released on **2025-09-13**</sup>
+
+#### 💄 Styles
+
+- **misc**: Fix discover plugin link.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Fix discover plugin link, closes [#9240](https://github.com/lobehub/lobe-chat/issues/9240) ([cfb2246](https://github.com/lobehub/lobe-chat/commit/cfb2246))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.3](https://github.com/lobehub/lobe-chat/compare/v1.128.2...v1.128.3)
+
+<sup>Released on **2025-09-13**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix open chat page with float link modal.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix open chat page with float link modal, closes [#9235](https://github.com/lobehub/lobe-chat/issues/9235) ([2c677e5](https://github.com/lobehub/lobe-chat/commit/2c677e5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.2](https://github.com/lobehub/lobe-chat/compare/v1.128.1...v1.128.2)
+
+<sup>Released on **2025-09-13**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n, Update model configs.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9237](https://github.com/lobehub/lobe-chat/issues/9237) ([642dc3b](https://github.com/lobehub/lobe-chat/commit/642dc3b))
+- **misc**: Update model configs, closes [#9170](https://github.com/lobehub/lobe-chat/issues/9170) ([f89b730](https://github.com/lobehub/lobe-chat/commit/f89b730))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.128.1](https://github.com/lobehub/lobe-chat/compare/v1.128.0...v1.128.1)
+
+<sup>Released on **2025-09-12**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor message proccesser to the context engine.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor message proccesser to the context engine, closes [#9230](https://github.com/lobehub/lobe-chat/issues/9230) ([dacfffd](https://github.com/lobehub/lobe-chat/commit/dacfffd))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.128.0](https://github.com/lobehub/lobe-chat/compare/v1.127.4...v1.128.0)
+
+<sup>Released on **2025-09-12**</sup>
+
+#### ✨ Features
+
+- **misc**: ChatInput support resize.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: ChatInput support resize, closes [#9215](https://github.com/lobehub/lobe-chat/issues/9215) ([5e814e0](https://github.com/lobehub/lobe-chat/commit/5e814e0))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.127.4](https://github.com/lobehub/lobe-chat/compare/v1.127.3...v1.127.4)
+
+<sup>Released on **2025-09-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Improve OpenAIStream processing to emit usage data for chunks lacking choices.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Improve OpenAIStream processing to emit usage data for chunks lacking choices, closes [#9220](https://github.com/lobehub/lobe-chat/issues/9220) ([8ba662c](https://github.com/lobehub/lobe-chat/commit/8ba662c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.127.3](https://github.com/lobehub/lobe-chat/compare/v1.127.2...v1.127.3)
+
+<sup>Released on **2025-09-11**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor model runtime folder structure and add more tests.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor model runtime folder structure and add more tests, closes [#9210](https://github.com/lobehub/lobe-chat/issues/9210) ([7fe17e4](https://github.com/lobehub/lobe-chat/commit/7fe17e4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.127.2](https://github.com/lobehub/lobe-chat/compare/v1.127.1...v1.127.2)
+
+<sup>Released on **2025-09-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Delete files should delete chunks、embedings、fileChunk.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Delete files should delete chunks、embedings、fileChunk, closes [#9196](https://github.com/lobehub/lobe-chat/issues/9196) ([4ee1d29](https://github.com/lobehub/lobe-chat/commit/4ee1d29))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.127.1](https://github.com/lobehub/lobe-chat/compare/v1.127.0...v1.127.1)
+
+<sup>Released on **2025-09-11**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix not remove message with server mode.
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix not remove message with server mode, closes [#9207](https://github.com/lobehub/lobe-chat/issues/9207) ([790af5f](https://github.com/lobehub/lobe-chat/commit/790af5f))
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9208](https://github.com/lobehub/lobe-chat/issues/9208) ([987fbf2](https://github.com/lobehub/lobe-chat/commit/987fbf2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.127.0](https://github.com/lobehub/lobe-chat/compare/v1.126.3...v1.127.0)
+
+<sup>Released on **2025-09-10**</sup>
+
+#### ✨ Features
+
+- **misc**: Seedream 4.0.
+
+#### 💄 Styles
+
+- **misc**: Add hotkey tooltip to typobar actions.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Seedream 4.0, closes [#9198](https://github.com/lobehub/lobe-chat/issues/9198) ([26a743f](https://github.com/lobehub/lobe-chat/commit/26a743f))
+
+#### Styles
+
+- **misc**: Add hotkey tooltip to typobar actions, closes [#9203](https://github.com/lobehub/lobe-chat/issues/9203) ([e372875](https://github.com/lobehub/lobe-chat/commit/e372875))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.126.3](https://github.com/lobehub/lobe-chat/compare/v1.126.2...v1.126.3)
+
+<sup>Released on **2025-09-10**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add CometAPI model provider and chat models, update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add CometAPI model provider and chat models, closes [#9065](https://github.com/lobehub/lobe-chat/issues/9065) ([575e334](https://github.com/lobehub/lobe-chat/commit/575e334))
+- **misc**: Update i18n, closes [#9146](https://github.com/lobehub/lobe-chat/issues/9146) ([e6fc02e](https://github.com/lobehub/lobe-chat/commit/e6fc02e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.126.2](https://github.com/lobehub/lobe-chat/compare/v1.126.1...v1.126.2)
+
+<sup>Released on **2025-09-09**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix editor key handling.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix editor key handling, closes [#9189](https://github.com/lobehub/lobe-chat/issues/9189) ([8be822b](https://github.com/lobehub/lobe-chat/commit/8be822b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.126.1](https://github.com/lobehub/lobe-chat/compare/v1.126.0...v1.126.1)
+
+<sup>Released on **2025-09-09**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix Assistant List error message.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix Assistant List error message, closes [#9178](https://github.com/lobehub/lobe-chat/issues/9178) ([3519cb2](https://github.com/lobehub/lobe-chat/commit/3519cb2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.126.0](https://github.com/lobehub/lobe-chat/compare/v1.125.0...v1.126.0)
+
+<sup>Released on **2025-09-08**</sup>
+
+#### ✨ Features
+
+- **image**: Implement model selection memory functionality.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **image**: Implement model selection memory functionality, closes [#9160](https://github.com/lobehub/lobe-chat/issues/9160) ([b00e6d7](https://github.com/lobehub/lobe-chat/commit/b00e6d7))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.125.0](https://github.com/lobehub/lobe-chat/compare/v1.124.4...v1.125.0)
+
+<sup>Released on **2025-09-08**</sup>
+
+#### ✨ Features
+
+- **misc**: Add Math and TaskList to Editor.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add Math and TaskList to Editor, closes [#9165](https://github.com/lobehub/lobe-chat/issues/9165) ([9e0621f](https://github.com/lobehub/lobe-chat/commit/9e0621f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.124.4](https://github.com/lobehub/lobe-chat/compare/v1.124.3...v1.124.4)
+
+<sup>Released on **2025-09-06**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Revert V1 Mobile.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Revert V1 Mobile, closes [#9143](https://github.com/lobehub/lobe-chat/issues/9143) ([b385602](https://github.com/lobehub/lobe-chat/commit/b385602))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.124.3](https://github.com/lobehub/lobe-chat/compare/v1.124.2...v1.124.3)
+
+<sup>Released on **2025-09-06**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor to remove edge runtime and add more tests.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor to remove edge runtime and add more tests, closes [#9133](https://github.com/lobehub/lobe-chat/issues/9133) ([6f87034](https://github.com/lobehub/lobe-chat/commit/6f87034))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.124.2](https://github.com/lobehub/lobe-chat/compare/v1.124.1...v1.124.2)
+
+<sup>Released on **2025-09-06**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix ChatInput send command switch.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix ChatInput send command switch, closes [#9131](https://github.com/lobehub/lobe-chat/issues/9131) ([4d5246a](https://github.com/lobehub/lobe-chat/commit/4d5246a))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.124.1](https://github.com/lobehub/lobe-chat/compare/v1.124.0...v1.124.1)
+
+<sup>Released on **2025-09-06**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Enhance NewAPI with environment variables and fix routers compatibility.
+
+#### 💄 Styles
+
+- **misc**: Update doubao-seed-1.6-vision models.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Enhance NewAPI with environment variables and fix routers compatibility, closes [#9110](https://github.com/lobehub/lobe-chat/issues/9110) ([a66856d](https://github.com/lobehub/lobe-chat/commit/a66856d))
+
+#### Styles
+
+- **misc**: Update doubao-seed-1.6-vision models, closes [#9052](https://github.com/lobehub/lobe-chat/issues/9052) ([df2d001](https://github.com/lobehub/lobe-chat/commit/df2d001))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.124.0](https://github.com/lobehub/lobe-chat/compare/v1.123.4...v1.124.0)
+
+<sup>Released on **2025-09-06**</sup>
+
+#### ✨ Features
+
+- **misc**: ChatInput support rich text and support parallel send.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: ChatInput support rich text and support parallel send, closes [#8964](https://github.com/lobehub/lobe-chat/issues/8964) ([38d9d98](https://github.com/lobehub/lobe-chat/commit/38d9d98))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.123.4](https://github.com/lobehub/lobe-chat/compare/v1.123.3...v1.123.4)
+
+<sup>Released on **2025-09-05**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Remove edge runtime.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Remove edge runtime, closes [#9085](https://github.com/lobehub/lobe-chat/issues/9085) ([d3544f9](https://github.com/lobehub/lobe-chat/commit/d3544f9))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.123.3](https://github.com/lobehub/lobe-chat/compare/v1.123.2...v1.123.3)
+
+<sup>Released on **2025-09-05**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix mobile header title to loog not ellipsis.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix mobile header title to loog not ellipsis, closes [#9109](https://github.com/lobehub/lobe-chat/issues/9109) ([9b8435b](https://github.com/lobehub/lobe-chat/commit/9b8435b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.123.2](https://github.com/lobehub/lobe-chat/compare/v1.123.1...v1.123.2)
+
+<sup>Released on **2025-09-05**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Not use branch topic when this topic is not save.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Not use branch topic when this topic is not save, closes [#9083](https://github.com/lobehub/lobe-chat/issues/9083) ([f534d19](https://github.com/lobehub/lobe-chat/commit/f534d19))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.123.1](https://github.com/lobehub/lobe-chat/compare/v1.123.0...v1.123.1)
+
+<sup>Released on **2025-09-05**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9095](https://github.com/lobehub/lobe-chat/issues/9095) ([1080ff3](https://github.com/lobehub/lobe-chat/commit/1080ff3))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.123.0](https://github.com/lobehub/lobe-chat/compare/v1.122.7...v1.123.0)
+
+<sup>Released on **2025-09-04**</sup>
+
+#### ✨ Features
+
+- **misc**: Add NewAPI as a router provider for multi-model aggregation.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add NewAPI as a router provider for multi-model aggregation, closes [#9041](https://github.com/lobehub/lobe-chat/issues/9041) [/github.com/lobehub/lobe-chat/pull/9041#pullrequestreview-3183464594](https://github.com//github.com/lobehub/lobe-chat/pull/9041/issues/pullrequestreview-3183464594) ([7e291c2](https://github.com/lobehub/lobe-chat/commit/7e291c2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.7](https://github.com/lobehub/lobe-chat/compare/v1.122.6...v1.122.7)
+
+<sup>Released on **2025-09-04**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Make LobeNextAuthDBAdapter Edge Compatible.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Make LobeNextAuthDBAdapter Edge Compatible, closes [#9088](https://github.com/lobehub/lobe-chat/issues/9088) ([411f88e](https://github.com/lobehub/lobe-chat/commit/411f88e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.6](https://github.com/lobehub/lobe-chat/compare/v1.122.5...v1.122.6)
+
+<sup>Released on **2025-09-04**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.5](https://github.com/lobehub/lobe-chat/compare/v1.122.4...v1.122.5)
+
+<sup>Released on **2025-09-04**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Make LobeNextAuthDBAdapter Edge Compatible.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Make LobeNextAuthDBAdapter Edge Compatible, closes [#8188](https://github.com/lobehub/lobe-chat/issues/8188) ([f456e91](https://github.com/lobehub/lobe-chat/commit/f456e91))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.4](https://github.com/lobehub/lobe-chat/compare/v1.122.3...v1.122.4)
+
+<sup>Released on **2025-09-04**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9062](https://github.com/lobehub/lobe-chat/issues/9062) ([970ece0](https://github.com/lobehub/lobe-chat/commit/970ece0))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.3](https://github.com/lobehub/lobe-chat/compare/v1.122.2...v1.122.3)
+
+<sup>Released on **2025-09-04**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Support base64 image from markdown image syntax.
+
+#### 💄 Styles
+
+- **misc**: Update the price of the o3 model in OpenRouter.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Support base64 image from markdown image syntax, closes [#9054](https://github.com/lobehub/lobe-chat/issues/9054) ([d013a16](https://github.com/lobehub/lobe-chat/commit/d013a16))
+
+#### Styles
+
+- **misc**: Update the price of the o3 model in OpenRouter, closes [#9075](https://github.com/lobehub/lobe-chat/issues/9075) ([43ef47c](https://github.com/lobehub/lobe-chat/commit/43ef47c))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.2](https://github.com/lobehub/lobe-chat/compare/v1.122.1...v1.122.2)
+
+<sup>Released on **2025-09-04**</sup>
+
+#### 🐛 Bug Fixes
+
+- **modelProvider**: Add lmstudio to provider whitelist to enable fetchOnClient toggle.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **modelProvider**: Add lmstudio to provider whitelist to enable fetchOnClient toggle, closes [#9067](https://github.com/lobehub/lobe-chat/issues/9067) ([e58864f](https://github.com/lobehub/lobe-chat/commit/e58864f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.122.1](https://github.com/lobehub/lobe-chat/compare/v1.122.0...v1.122.1)
+
+<sup>Released on **2025-09-04**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.122.0](https://github.com/lobehub/lobe-chat/compare/v1.121.1...v1.122.0)
+
+<sup>Released on **2025-09-04**</sup>
+
+#### ✨ Features
+
+- **misc**: Refactor to speed up send message in server mode.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Refactor to speed up send message in server mode, closes [#9046](https://github.com/lobehub/lobe-chat/issues/9046) ([4813b6d](https://github.com/lobehub/lobe-chat/commit/4813b6d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.121.1](https://github.com/lobehub/lobe-chat/compare/v1.121.0...v1.121.1)
+
+<sup>Released on **2025-09-03**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix socks5 proxy not work problem, fix virtuaso minheight was null.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix socks5 proxy not work problem, closes [#9053](https://github.com/lobehub/lobe-chat/issues/9053) ([b13563c](https://github.com/lobehub/lobe-chat/commit/b13563c))
+- **misc**: Fix virtuaso minheight was null, closes [#9055](https://github.com/lobehub/lobe-chat/issues/9055) ([ef79721](https://github.com/lobehub/lobe-chat/commit/ef79721))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.121.0](https://github.com/lobehub/lobe-chat/compare/v1.120.7...v1.121.0)
+
+<sup>Released on **2025-09-03**</sup>
+
+#### ✨ Features
+
+- **misc**: Add nano banana Chinese prompt notify.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add nano banana Chinese prompt notify, closes [#9038](https://github.com/lobehub/lobe-chat/issues/9038) ([58e19f8](https://github.com/lobehub/lobe-chat/commit/58e19f8))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.7](https://github.com/lobehub/lobe-chat/compare/v1.120.6...v1.120.7)
+
+<sup>Released on **2025-09-02**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9033](https://github.com/lobehub/lobe-chat/issues/9033) ([650e552](https://github.com/lobehub/lobe-chat/commit/650e552))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.6](https://github.com/lobehub/lobe-chat/compare/v1.120.5...v1.120.6)
+
+<sup>Released on **2025-09-01**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add upload hint for non-visual model.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add upload hint for non-visual model, closes [#7969](https://github.com/lobehub/lobe-chat/issues/7969) ([1224f4e](https://github.com/lobehub/lobe-chat/commit/1224f4e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.5](https://github.com/lobehub/lobe-chat/compare/v1.120.4...v1.120.5)
+
+<sup>Released on **2025-09-01**</sup>
+
+#### 🐛 Bug Fixes
+
+- **ai-image**: Save config.imageUrl with fullUrl instead of key.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **ai-image**: Save config.imageUrl with fullUrl instead of key, closes [#9016](https://github.com/lobehub/lobe-chat/issues/9016) ([bad009a](https://github.com/lobehub/lobe-chat/commit/bad009a))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.4](https://github.com/lobehub/lobe-chat/compare/v1.120.3...v1.120.4)
+
+<sup>Released on **2025-09-01**</sup>
+
+#### 💄 Styles
+
+- **misc**: Adjust ControlsForm component to adapt to mobile phone display.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Adjust ControlsForm component to adapt to mobile phone display, closes [#9013](https://github.com/lobehub/lobe-chat/issues/9013) ([c6038c0](https://github.com/lobehub/lobe-chat/commit/c6038c0))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.3](https://github.com/lobehub/lobe-chat/compare/v1.120.2...v1.120.3)
+
+<sup>Released on **2025-09-01**</sup>
+
+#### 💄 Styles
+
+- **misc**: Support new provider Nebius.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Support new provider Nebius, closes [#8903](https://github.com/lobehub/lobe-chat/issues/8903) ([c15791d](https://github.com/lobehub/lobe-chat/commit/c15791d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.2](https://github.com/lobehub/lobe-chat/compare/v1.120.1...v1.120.2)
+
+<sup>Released on **2025-08-31**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Remove base path.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Remove base path, closes [#9015](https://github.com/lobehub/lobe-chat/issues/9015) ([2a5f8d7](https://github.com/lobehub/lobe-chat/commit/2a5f8d7))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.120.1](https://github.com/lobehub/lobe-chat/compare/v1.120.0...v1.120.1)
+
+<sup>Released on **2025-08-31**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#9005](https://github.com/lobehub/lobe-chat/issues/9005) ([63760f9](https://github.com/lobehub/lobe-chat/commit/63760f9))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.120.0](https://github.com/lobehub/lobe-chat/compare/v1.119.2...v1.120.0)
+
+<sup>Released on **2025-08-30**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Remove webrtc sync feature flag.
+
+#### ✨ Features
+
+- **misc**: Rename Gemini 2.5 flash image to Nano Banana.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Remove webrtc sync feature flag, closes [#9002](https://github.com/lobehub/lobe-chat/issues/9002) ([0924d98](https://github.com/lobehub/lobe-chat/commit/0924d98))
+
+#### What's improved
+
+- **misc**: Rename Gemini 2.5 flash image to Nano Banana, closes [#9004](https://github.com/lobehub/lobe-chat/issues/9004) ([dac5a6f](https://github.com/lobehub/lobe-chat/commit/dac5a6f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.119.2](https://github.com/lobehub/lobe-chat/compare/v1.119.1...v1.119.2)
+
+<sup>Released on **2025-08-30**</sup>
+
+#### ♻ Code Refactoring
+
+- **model-runtime**: Refactor model-runtime dependencies and clean code.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **model-runtime**: Refactor model-runtime dependencies and clean code, closes [#8997](https://github.com/lobehub/lobe-chat/issues/8997) ([9f7677d](https://github.com/lobehub/lobe-chat/commit/9f7677d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.119.1](https://github.com/lobehub/lobe-chat/compare/v1.119.0...v1.119.1)
+
+<sup>Released on **2025-08-30**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Update enableStreaming name.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Update enableStreaming name, closes [#8995](https://github.com/lobehub/lobe-chat/issues/8995) ([7c7de40](https://github.com/lobehub/lobe-chat/commit/7c7de40))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.119.0](https://github.com/lobehub/lobe-chat/compare/v1.118.8...v1.119.0)
+
+<sup>Released on **2025-08-30**</sup>
+
+#### ✨ Features
+
+- **misc**: Added support for Azure OpenAI Image Generation.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Added support for Azure OpenAI Image Generation, closes [#8898](https://github.com/lobehub/lobe-chat/issues/8898) ([6042340](https://github.com/lobehub/lobe-chat/commit/6042340))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.118.8](https://github.com/lobehub/lobe-chat/compare/v1.118.7...v1.118.8)
+
+<sup>Released on **2025-08-30**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update DeepSeek V3.1 & Gemini 2.5 Flash Image Preview models.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update DeepSeek V3.1 & Gemini 2.5 Flash Image Preview models, closes [#8878](https://github.com/lobehub/lobe-chat/issues/8878) ([5d538a2](https://github.com/lobehub/lobe-chat/commit/5d538a2))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.118.7](https://github.com/lobehub/lobe-chat/compare/v1.118.6...v1.118.7)
+
+<sup>Released on **2025-08-30**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update i18n, closes [#8990](https://github.com/lobehub/lobe-chat/issues/8990) ([136bc5a](https://github.com/lobehub/lobe-chat/commit/136bc5a))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.118.6](https://github.com/lobehub/lobe-chat/compare/v1.118.5...v1.118.6)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### 💄 Styles
+
+- **misc**: Support non-stream mode.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Support non-stream mode, closes [#8751](https://github.com/lobehub/lobe-chat/issues/8751) ([ce623bb](https://github.com/lobehub/lobe-chat/commit/ce623bb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.118.5](https://github.com/lobehub/lobe-chat/compare/v1.118.4...v1.118.5)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor the `model-bank` package from `src/config/aiModels`.
+
+#### 💄 Styles
+
+- **misc**: Fix clerk scrollBox style, ModelFetcher support getting prices.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor the `model-bank` package from `src/config/aiModels`, closes [#8983](https://github.com/lobehub/lobe-chat/issues/8983) ([c65eb09](https://github.com/lobehub/lobe-chat/commit/c65eb09))
+
+#### Styles
+
+- **misc**: Fix clerk scrollBox style, closes [#8989](https://github.com/lobehub/lobe-chat/issues/8989) ([b25b5a0](https://github.com/lobehub/lobe-chat/commit/b25b5a0))
+- **misc**: ModelFetcher support getting prices, closes [#8985](https://github.com/lobehub/lobe-chat/issues/8985) ([58b73ec](https://github.com/lobehub/lobe-chat/commit/58b73ec))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.118.4](https://github.com/lobehub/lobe-chat/compare/v1.118.3...v1.118.4)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### 💄 Styles
+
+- **misc**: Fix chat session part switch theme issue.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Fix chat session part switch theme issue, closes [#8987](https://github.com/lobehub/lobe-chat/issues/8987) ([b7111be](https://github.com/lobehub/lobe-chat/commit/b7111be))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.118.3](https://github.com/lobehub/lobe-chat/compare/v1.118.2...v1.118.3)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Correct totalOutputTokens calculation for XAI provider.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Correct totalOutputTokens calculation for XAI provider, closes [#8984](https://github.com/lobehub/lobe-chat/issues/8984) ([09ce90a](https://github.com/lobehub/lobe-chat/commit/09ce90a))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.118.2](https://github.com/lobehub/lobe-chat/compare/v1.118.1...v1.118.2)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add Grok Code Fast 1 model.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add Grok Code Fast 1 model, closes [#8982](https://github.com/lobehub/lobe-chat/issues/8982) ([dbcec3d](https://github.com/lobehub/lobe-chat/commit/dbcec3d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.118.1](https://github.com/lobehub/lobe-chat/compare/v1.118.0...v1.118.1)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Add Content-Security-Policy env.
+
+#### 💄 Styles
+
+- **misc**: Support Gemini URL context tool.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Add Content-Security-Policy env, closes [#8752](https://github.com/lobehub/lobe-chat/issues/8752) ([9250540](https://github.com/lobehub/lobe-chat/commit/9250540))
+
+#### Styles
+
+- **misc**: Support Gemini URL context tool, closes [#8731](https://github.com/lobehub/lobe-chat/issues/8731) ([5d4ed11](https://github.com/lobehub/lobe-chat/commit/5d4ed11))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.118.0](https://github.com/lobehub/lobe-chat/compare/v1.117.1...v1.118.0)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### ✨ Features
+
+- **misc**: Add new provider AkashChat.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add new provider AkashChat, closes [#8923](https://github.com/lobehub/lobe-chat/issues/8923) ([2f3bf0f](https://github.com/lobehub/lobe-chat/commit/2f3bf0f))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.117.1](https://github.com/lobehub/lobe-chat/compare/v1.117.0...v1.117.1)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Move chat item into chat.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Move chat item into chat, closes [#8970](https://github.com/lobehub/lobe-chat/issues/8970) ([e09817e](https://github.com/lobehub/lobe-chat/commit/e09817e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.117.0](https://github.com/lobehub/lobe-chat/compare/v1.116.4...v1.117.0)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### ✨ Features
+
+- **misc**: Ai image support Gemini 2.5 Flash Image, Support Gemini 2.5 Flash Image Preview in OpenRouter.
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Ai image support Gemini 2.5 Flash Image, closes [#8966](https://github.com/lobehub/lobe-chat/issues/8966) ([64b969e](https://github.com/lobehub/lobe-chat/commit/64b969e))
+- **misc**: Support Gemini 2.5 Flash Image Preview in OpenRouter, closes [#8944](https://github.com/lobehub/lobe-chat/issues/8944) ([23dcf4c](https://github.com/lobehub/lobe-chat/commit/23dcf4c))
+
+#### Styles
+
+- **misc**: Update i18n, closes [#8975](https://github.com/lobehub/lobe-chat/issues/8975) ([6872798](https://github.com/lobehub/lobe-chat/commit/6872798))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.117.0](https://github.com/lobehub/lobe-chat/compare/v1.116.4...v1.117.0)
+
+<sup>Released on **2025-08-29**</sup>
+
+#### ✨ Features
+
+- **misc**: Ai image support Gemini 2.5 Flash Image.
+
+#### 💄 Styles
+
+- **misc**: Update i18n.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Ai image support Gemini 2.5 Flash Image, closes [#8966](https://github.com/lobehub/lobe-chat/issues/8966) ([64b969e](https://github.com/lobehub/lobe-chat/commit/64b969e))
+
+#### Styles
+
+- **misc**: Update i18n, closes [#8975](https://github.com/lobehub/lobe-chat/issues/8975) ([6872798](https://github.com/lobehub/lobe-chat/commit/6872798))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.117.0](https://github.com/lobehub/lobe-chat/compare/v1.116.4...v1.117.0)
+
+<sup>Released on **2025-08-28**</sup>
+
+#### ✨ Features
+
+- **misc**: Ai image support Gemini 2.5 Flash Image.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Ai image support Gemini 2.5 Flash Image, closes [#8966](https://github.com/lobehub/lobe-chat/issues/8966) ([64b969e](https://github.com/lobehub/lobe-chat/commit/64b969e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.116.4](https://github.com/lobehub/lobe-chat/compare/v1.116.3...v1.116.4)
+
+<sup>Released on **2025-08-28**</sup>
+
+#### 💄 Styles
+
+- **misc**: Support html preview.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Support html preview, closes [#8969](https://github.com/lobehub/lobe-chat/issues/8969) ([82abf6d](https://github.com/lobehub/lobe-chat/commit/82abf6d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.116.3](https://github.com/lobehub/lobe-chat/compare/v1.116.2...v1.116.3)
+
+<sup>Released on **2025-08-28**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Fix desktop route error.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Fix desktop route error, closes [#8962](https://github.com/lobehub/lobe-chat/issues/8962) ([27a4b34](https://github.com/lobehub/lobe-chat/commit/27a4b34))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.116.2](https://github.com/lobehub/lobe-chat/compare/v1.116.1...v1.116.2)
+
+<sup>Released on **2025-08-28**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.116.1](https://github.com/lobehub/lobe-chat/compare/v1.116.0...v1.116.1)
+
+<sup>Released on **2025-08-27**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.116.0](https://github.com/lobehub/lobe-chat/compare/v1.115.0...v1.116.0)
+
+<sup>Released on **2025-08-27**</sup>
+
+#### ✨ Features
+
+- **misc**: Add gemini 2.5 flash image for vertex ai.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Add gemini 2.5 flash image for vertex ai, closes [#8943](https://github.com/lobehub/lobe-chat/issues/8943) ([74d9bb5](https://github.com/lobehub/lobe-chat/commit/74d9bb5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.115.0](https://github.com/lobehub/lobe-chat/compare/v1.114.6...v1.115.0)
+
+<sup>Released on **2025-08-26**</sup>
+
+#### ✨ Features
+
+- **image**: Polish ai image.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **image**: Polish ai image, closes [#8915](https://github.com/lobehub/lobe-chat/issues/8915) ([0efe28d](https://github.com/lobehub/lobe-chat/commit/0efe28d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.114.6](https://github.com/lobehub/lobe-chat/compare/v1.114.5...v1.114.6)
+
+<sup>Released on **2025-08-22**</sup>
+
+#### 🐛 Bug Fixes
+
+- **files**: Remove force-static rendering to enable session access.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **files**: Remove force-static rendering to enable session access, closes [#8900](https://github.com/lobehub/lobe-chat/issues/8900) ([6100d21](https://github.com/lobehub/lobe-chat/commit/6100d21))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.114.5](https://github.com/lobehub/lobe-chat/compare/v1.114.4...v1.114.5)
+
+<sup>Released on **2025-08-22**</sup>
+
+#### 💄 Styles
+
+- **misc**: Update mistral model vision ability.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Update mistral model vision ability, closes [#8885](https://github.com/lobehub/lobe-chat/issues/8885) ([915c0ff](https://github.com/lobehub/lobe-chat/commit/915c0ff))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.114.4](https://github.com/lobehub/lobe-chat/compare/v1.114.3...v1.114.4)
+
+<sup>Released on **2025-08-22**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Move database to packages.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Move database to packages, closes [#8874](https://github.com/lobehub/lobe-chat/issues/8874) ([af1f715](https://github.com/lobehub/lobe-chat/commit/af1f715))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.114.3](https://github.com/lobehub/lobe-chat/compare/v1.114.2...v1.114.3)
+
+<sup>Released on **2025-08-21**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.114.2](https://github.com/lobehub/lobe-chat/compare/v1.114.1...v1.114.2)
+
+<sup>Released on **2025-08-21**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Can't load custom provider config.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Can't load custom provider config, closes [#8880](https://github.com/lobehub/lobe-chat/issues/8880) ([9ec3315](https://github.com/lobehub/lobe-chat/commit/9ec3315))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.114.1](https://github.com/lobehub/lobe-chat/compare/v1.114.0...v1.114.1)
+
+<sup>Released on **2025-08-21**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Move chain into `@lobechat/prompts`.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Move chain into `@lobechat/prompts`, closes [#8875](https://github.com/lobehub/lobe-chat/issues/8875) ([c576b97](https://github.com/lobehub/lobe-chat/commit/c576b97))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.114.0](https://github.com/lobehub/lobe-chat/compare/v1.113.3...v1.114.0)
+
+<sup>Released on **2025-08-19**</sup>
+
+#### ✨ Features
+
+- **models**: Add Qwen Image Edit model.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **models**: Add Qwen Image Edit model, closes [#8851](https://github.com/lobehub/lobe-chat/issues/8851) ([4d7a060](https://github.com/lobehub/lobe-chat/commit/4d7a060))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.113.3](https://github.com/lobehub/lobe-chat/compare/v1.113.2...v1.113.3)
+
+<sup>Released on **2025-08-19**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Support Grok thinking models in AiHubMix, The 'stream_options' parameter is only allowed when 'stream' is enabled.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Support Grok thinking models in AiHubMix, closes [#8713](https://github.com/lobehub/lobe-chat/issues/8713) ([ffa9b1b](https://github.com/lobehub/lobe-chat/commit/ffa9b1b))
+- **misc**: The 'stream_options' parameter is only allowed when 'stream' is enabled, closes [#8778](https://github.com/lobehub/lobe-chat/issues/8778) ([fcc32d5](https://github.com/lobehub/lobe-chat/commit/fcc32d5))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.113.2](https://github.com/lobehub/lobe-chat/compare/v1.113.1...v1.113.2)
+
+<sup>Released on **2025-08-18**</sup>
+
+#### 🐛 Bug Fixes
+
+- **mcp**: Use customParams for environment settings fallback.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **mcp**: Use customParams for environment settings fallback, closes [#8814](https://github.com/lobehub/lobe-chat/issues/8814) ([ab043d4](https://github.com/lobehub/lobe-chat/commit/ab043d4))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.113.1](https://github.com/lobehub/lobe-chat/compare/v1.113.0...v1.113.1)
+
+<sup>Released on **2025-08-17**</sup>
+
+#### 🐛 Bug Fixes
+
+- **db**: Desktop local db can't vectorization.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **db**: Desktop local db can't vectorization, closes [#8830](https://github.com/lobehub/lobe-chat/issues/8830) ([a00fd9d](https://github.com/lobehub/lobe-chat/commit/a00fd9d))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.113.0](https://github.com/lobehub/lobe-chat/compare/v1.112.5...v1.113.0)
+
+<sup>Released on **2025-08-17**</sup>
+
+#### ✨ Features
+
+- **provider**: Add BFL provider support for image generation.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **provider**: Add BFL provider support for image generation, closes [#8806](https://github.com/lobehub/lobe-chat/issues/8806) ([519e03e](https://github.com/lobehub/lobe-chat/commit/519e03e))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.112.5](https://github.com/lobehub/lobe-chat/compare/v1.112.4...v1.112.5)
+
+<sup>Released on **2025-08-17**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Improve mcp tracing with user config.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Improve mcp tracing with user config, closes [#8827](https://github.com/lobehub/lobe-chat/issues/8827) ([5cab2ee](https://github.com/lobehub/lobe-chat/commit/5cab2ee))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.112.4](https://github.com/lobehub/lobe-chat/compare/v1.112.3...v1.112.4)
+
+<sup>Released on **2025-08-16**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor prompts folder to the `@lobechat/prompts` pacakge.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor prompts folder to the `@lobechat/prompts` pacakge, closes [#8810](https://github.com/lobehub/lobe-chat/issues/8810) ([d82e7bb](https://github.com/lobehub/lobe-chat/commit/d82e7bb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.112.3](https://github.com/lobehub/lobe-chat/compare/v1.112.2...v1.112.3)
+
+<sup>Released on **2025-08-16**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Refactor const folder to a new package.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Refactor const folder to a new package, closes [#8756](https://github.com/lobehub/lobe-chat/issues/8756) ([30a4734](https://github.com/lobehub/lobe-chat/commit/30a4734))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.112.2](https://github.com/lobehub/lobe-chat/compare/v1.112.1...v1.112.2)
+
+<sup>Released on **2025-08-16**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: 重构 ArgsInput 组件.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: 重构 ArgsInput 组件，closes [#8765](https://github.com/lobehub/lobe-chat/issues/8765) ([0905559](https://github.com/lobehub/lobe-chat/commit/0905559))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.112.1](https://github.com/lobehub/lobe-chat/compare/v1.112.0...v1.112.1)
+
+<sup>Released on **2025-08-16**</sup>
+
+#### 💄 Styles
+
+- **misc**: Add Imagen 4 GA models, style improve auth sign in box loading.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Styles
+
+- **misc**: Add Imagen 4 GA models, closes [#8799](https://github.com/lobehub/lobe-chat/issues/8799) ([2e9ad20](https://github.com/lobehub/lobe-chat/commit/2e9ad20))
+- **misc**: Style improve auth sign in box loading, closes [#8805](https://github.com/lobehub/lobe-chat/issues/8805) ([62f5a1b](https://github.com/lobehub/lobe-chat/commit/62f5a1b))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+## [Version 1.112.0](https://github.com/lobehub/lobe-chat/compare/v1.111.12...v1.112.0)
+
+<sup>Released on **2025-08-15**</sup>
+
+#### ✨ Features
+
+- **feature-flags**: Add ai_image flag to control AI painting UI.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **feature-flags**: Add ai_image flag to control AI painting UI, closes [#8797](https://github.com/lobehub/lobe-chat/issues/8797) ([a1c66c8](https://github.com/lobehub/lobe-chat/commit/a1c66c8))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 1.111.12](https://github.com/lobehub/lobe-chat/compare/v1.111.11...v1.111.12)
+
+<sup>Released on **2025-08-14**</sup>
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.111.11](https://github.com/lobehub/lobe-chat/compare/v1.111.10...v1.111.11)
 
 <sup>Released on **2025-08-13**</sup>

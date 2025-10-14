@@ -153,6 +153,28 @@
     "searchProviders": "Zoek providers...",
     "sort": "Aangepaste sortering"
   },
+  "newapi": {
+    "apiKey": {
+      "desc": "API-sleutel geleverd door het New API-platform",
+      "placeholder": "New API API-sleutel",
+      "required": "API-sleutel is verplicht",
+      "title": "API-sleutel"
+    },
+    "apiUrl": {
+      "desc": "API-adres van de New API-service, meestal met /v1",
+      "title": "API-adres"
+    },
+    "enabled": {
+      "title": "New API inschakelen"
+    },
+    "models": {
+      "batchSelect": "Modellen in batch selecteren ({{count}})",
+      "fetch": "Modelijst ophalen",
+      "selected": "Geselecteerde modellen",
+      "title": "Beschikbare modellen"
+    },
+    "title": "New API"
+  },
   "ollama": {
     "checker": {
       "desc": "Test of het proxyadres correct is ingevuld",
@@ -185,6 +207,10 @@
     }
   },
   "providerModels": {
+    "batchSelect": {
+      "selected": "{{count}} modellen geselecteerd",
+      "title": "Batchselectie"
+    },
     "config": {
       "aesGcm": "Je sleutel en proxy-adres worden versleuteld met <1>AES-GCM</1> encryptie-algoritme",
       "apiKey": {
@@ -258,15 +284,42 @@
           "placeholder": "Voer model-id in, bijvoorbeeld gpt-4o of claude-3.5-sonnet",
           "title": "Model ID"
         },
+        "imageOutput": {
+          "extra": "Deze configuratie schakelt alleen de mogelijkheid van het model in om afbeeldingen te genereren. Het daadwerkelijke resultaat hangt volledig af van het model zelf. Test zelf of het model in staat is bruikbare afbeeldingen te genereren.",
+          "title": "Ondersteunt afbeeldingsgeneratie"
+        },
         "modalTitle": "Configuratie van aangepast model",
         "reasoning": {
           "extra": "Deze configuratie schakelt alleen de mogelijkheid voor diepgaand denken van het model in. Het specifieke effect hangt volledig af van het model zelf, test zelf of dit model in staat is tot bruikbaar diepgaand denken.",
           "title": "Ondersteuning voor diepgaand denken"
         },
+        "search": {
+          "extra": "Deze configuratie schakelt alleen de mogelijkheid van het ingebouwde zoekmechanisme van het model in om verbinding te maken met het internet. Of het ingebouwde zoekmechanisme wordt ondersteund, hangt af van het model zelf. Test zelf of het ingebouwde zoekmechanisme van het model bruikbaar is.",
+          "title": "Ondersteunt zoeken via internet"
+        },
         "tokens": {
           "extra": "Stel het maximale aantal tokens in dat door het model wordt ondersteund",
           "title": "Maximale contextvenster",
           "unlimited": "Onbeperkt"
+        },
+        "type": {
+          "extra": "Verschillende modeltypen hebben verschillende toepassingsscenario's en mogelijkheden",
+          "options": {
+            "chat": "Gesprek",
+            "embedding": "Vectorisatie",
+            "image": "Afbeeldingsgeneratie",
+            "realtime": "Realtime gesprek",
+            "stt": "Spraak naar tekst",
+            "text2music": "Tekst naar muziek",
+            "text2video": "Tekst naar video",
+            "tts": "Spraaksynthese"
+          },
+          "placeholder": "Selecteer een modeltype",
+          "title": "Modeltype"
+        },
+        "video": {
+          "extra": "Deze configuratie schakelt alleen de videodetectie-instellingen in de applicatie in. Of videodetectie wordt ondersteund, hangt volledig af van het model zelf. Test zelf of het model in staat is bruikbare videodetectie uit te voeren.",
+          "title": "Ondersteunt videodetectie"
         },
         "vision": {
           "extra": "Deze configuratie zal alleen de afbeeldinguploadcapaciteit in de applicatie inschakelen, of herkenning wordt ondersteund hangt volledig af van het model zelf, test de beschikbaarheid van de visuele herkenningscapaciteit van dit model zelf.",

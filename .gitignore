@@ -19,11 +19,11 @@ Desktop.ini
 
 # IDE and editors
 .idea/
-.vscode/
 *.sublime-*
 .history/
 .windsurfrules
 *.code-workspace
+.vscode/sessions.json
 
 # Temporary files
 .temp/
@@ -39,6 +39,7 @@ tmp/
 .env
 .env.local
 .env*.local
+.env.development
 venv/
 .venv/
 
@@ -102,11 +103,17 @@ vertex-ai-key.json
 .local/
 .claude/
 .mcp.json
-CLAUDE.md
-CLAUDE.*.md
+
+CLAUDE.local.md
+
+# MCP tools
+.serena/**
 
 # Misc
 ./packages/lobe-ui
 *.ppt*
 *.doc*
 *.xls*
+
+prd
+GEMINI.md

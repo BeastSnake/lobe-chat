@@ -237,6 +237,10 @@
       "title": "Limite du nombre de messages historiques",
       "unlimited": "Aucune limite sur le nombre de messages historiques"
     },
+    "enableStreaming": {
+      "desc": "Activez la diffusion en continu pour afficher les réponses en temps réel. Si désactivé, seule la réponse complète sera affichée.",
+      "title": "Activer la diffusion en continu"
+    },
     "historyCount": {
       "desc": "Nombre de messages historiques à inclure dans chaque requête",
       "title": "Nombre de messages historiques inclus"
@@ -289,6 +293,13 @@
       "title": "Thème"
     },
     "title": "Paramètres généraux"
+  },
+  "settingImage": {
+    "defaultCount": {
+      "desc": "Définir le nombre d'images générées par défaut lors de la création d'une nouvelle tâche dans le panneau de génération d'images.",
+      "label": "Nombre d'images par défaut",
+      "title": "Paramètres de dessin IA"
+    }
   },
   "settingModel": {
     "enableMaxTokens": {
@@ -545,6 +556,7 @@
     "common": "Paramètres généraux",
     "experiment": "Expérience",
     "hotkey": "Raccourcis clavier",
+    "image": "Dessin IA",
     "llm": "Modèle de langue",
     "provider": "Fournisseur de services d'IA",
     "proxy": "Proxy réseau",

@@ -237,6 +237,10 @@
       "title": "Limita il numero di messaggi storici",
       "unlimited": "Numero illimitato di messaggi storici"
     },
+    "enableStreaming": {
+      "desc": "Abilita l'output in streaming per visualizzare la risposta in tempo reale. Se disabilitato, verrà mostrata solo la risposta completa.",
+      "title": "Abilita output in streaming"
+    },
     "historyCount": {
       "desc": "Numero di messaggi inclusi in ogni richiesta (inclusi gli ultimi messaggi scritti, ogni domanda e risposta conta come 1)",
       "title": "Numero di messaggi inclusi"
@@ -289,6 +293,13 @@
       "title": "Tema"
     },
     "title": "Impostazioni Generali"
+  },
+  "settingImage": {
+    "defaultCount": {
+      "desc": "Imposta il numero predefinito di immagini da generare quando si crea una nuova attività nel pannello di generazione immagini.",
+      "label": "Numero predefinito di immagini",
+      "title": "Impostazioni AI per il disegno"
+    }
   },
   "settingModel": {
     "enableMaxTokens": {
@@ -545,6 +556,7 @@
     "common": "Impostazioni comuni",
     "experiment": "实验",
     "hotkey": "Scorciatoie",
+    "image": "Disegno AI",
     "llm": "Modello linguistico",
     "provider": "Fornitore di servizi AI",
     "proxy": "Proxy di rete",

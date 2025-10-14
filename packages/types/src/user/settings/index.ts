@@ -1,18 +1,19 @@
-import type { LobeAgentSettings } from '@/types/session';
-
+import type { LobeAgentSettings } from '../../session';
 import { UserGeneralConfig } from './general';
 import { UserHotkeyConfig } from './hotkey';
+import { UserImageConfig } from './image';
 import { UserKeyVaults } from './keyVaults';
 import { UserModelProviderConfig } from './modelProvider';
-import { UserSyncSettings } from './sync';
 import { UserSystemAgentConfig } from './systemAgent';
 import { UserToolConfig } from './tool';
 import { UserTTSConfig } from './tts';
 
 export type UserDefaultAgent = LobeAgentSettings;
 
+export * from './filesConfig';
 export * from './general';
 export * from './hotkey';
+export * from './image';
 export * from './keyVaults';
 export * from './modelProvider';
 export * from './sync';
@@ -26,9 +27,9 @@ export interface UserSettings {
   defaultAgent: UserDefaultAgent;
   general: UserGeneralConfig;
   hotkey: UserHotkeyConfig;
+  image: UserImageConfig;
   keyVaults: UserKeyVaults;
   languageModel: UserModelProviderConfig;
-  sync?: UserSyncSettings;
   systemAgent: UserSystemAgentConfig;
   tool: UserToolConfig;
   tts: UserTTSConfig;

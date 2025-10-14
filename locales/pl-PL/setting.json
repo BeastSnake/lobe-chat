@@ -237,6 +237,10 @@
       "title": "Ograniczenie liczby wiadomości w historii",
       "unlimited": "Bez limitu wiadomości w historii"
     },
+    "enableStreaming": {
+      "desc": "Włącz strumieniowe wyświetlanie odpowiedzi w czasie rzeczywistym. Po wyłączeniu wyświetlana jest tylko pełna odpowiedź.",
+      "title": "Włącz strumieniowe wyświetlanie"
+    },
     "historyCount": {
       "desc": "Liczba wiadomości przesyłanych w jednym żądaniu (obejmuje najnowsze pytania i odpowiedzi, gdzie każde pytanie i odpowiedź liczy się jako 1)",
       "title": "Liczba wiadomości"
@@ -289,6 +293,13 @@
       "title": "Motyw"
     },
     "title": "Ustawienia ogólne"
+  },
+  "settingImage": {
+    "defaultCount": {
+      "desc": "Ustaw domyślną liczbę obrazów generowanych podczas tworzenia nowego zadania.",
+      "label": "Domyślna liczba obrazów",
+      "title": "Ustawienia rysowania AI"
+    }
   },
   "settingModel": {
     "enableMaxTokens": {
@@ -545,6 +556,7 @@
     "common": "Ustawienia ogólne",
     "experiment": "Eksperyment",
     "hotkey": "Skróty klawiszowe",
+    "image": "Rysowanie AI",
     "llm": "Model językowy",
     "provider": "Dostawca usług AI",
     "proxy": "Proxy sieciowy",

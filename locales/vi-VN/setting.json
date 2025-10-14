@@ -237,6 +237,10 @@
       "title": "Giới hạn số lượng tin nhắn lịch sử",
       "unlimited": "Không giới hạn số lượng tin nhắn lịch sử"
     },
+    "enableStreaming": {
+      "desc": "Bật phát trực tiếp để hiển thị phản hồi theo thời gian thực. Tắt sẽ chỉ hiển thị phản hồi đầy đủ.",
+      "title": "Bật phát trực tiếp"
+    },
     "historyCount": {
       "desc": "Số lượng tin nhắn được gửi mỗi lần yêu cầu (bao gồm cả câu hỏi mới nhất. Mỗi câu hỏi và câu trả lời đều tính là 1)",
       "title": "Số lượng tin nhắn đi kèm"
@@ -289,6 +293,13 @@
       "title": "Chủ đề"
     },
     "title": "Cài đặt chung"
+  },
+  "settingImage": {
+    "defaultCount": {
+      "desc": "Thiết lập số lượng hình ảnh mặc định được tạo khi bắt đầu một tác vụ mới trong bảng tạo hình ảnh.",
+      "label": "Số lượng hình ảnh mặc định",
+      "title": "Cài đặt Vẽ AI"
+    }
   },
   "settingModel": {
     "enableMaxTokens": {
@@ -545,6 +556,7 @@
     "common": "Cài đặt chung",
     "experiment": "Thử nghiệm",
     "hotkey": "Phím tắt",
+    "image": "Vẽ AI",
     "llm": "Mô hình ngôn ngữ",
     "provider": "Nhà cung cấp AI",
     "proxy": "Mạng proxy",

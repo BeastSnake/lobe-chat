@@ -14,22 +14,20 @@ import {
   LobeOpenRouterAI,
   LobePerplexityAI,
   LobeQwenAI,
-  LobeRuntimeAI,
+  LobeStepfunAI,
   LobeTogetherAI,
   LobeZeroOneAI,
   LobeZhipuAI,
-  ModelProvider,
+  ModelRuntime,
 } from '@lobechat/model-runtime';
-import { ModelRuntime } from '@lobechat/model-runtime';
+import { ClientSecretPayload } from '@lobechat/types';
+import { ModelProvider } from 'model-bank';
 import { describe, expect, it, vi } from 'vitest';
-
-import { ClientSecretPayload } from '@/const/auth';
-import { LobeStepfunAI } from '@/libs/model-runtime/stepfun';
 
 import { initModelRuntimeWithUserPayload } from './index';
 
 // 模拟依赖项
-vi.mock('@/config/llm', () => ({
+vi.mock('@/envs/llm', () => ({
   getLLMConfig: vi.fn(() => ({
     // 确保为每个provider提供必要的配置信息
     OPENAI_API_KEY: 'test-openai-key',
@@ -84,6 +82,19 @@ describe('initModelRuntimeWithUserPayload method', () => {
         azureApiVersion: '2024-06-01',
       };
       const runtime = await initModelRuntimeWithUserPayload(ModelProvider.Azure, jwtPayload);
+      expect(runtime).toBeInstanceOf(ModelRuntime);
+      expect(runtime['_runtime']).toBeInstanceOf(LobeAzureOpenAI);
+      expect(runtime['_runtime'].baseURL).toBe(jwtPayload.baseURL);
+    });
+
+    it('Custom provider should use runtimeProvider to init', async () => {
+      const jwtPayload: ClientSecretPayload = {
+        apiKey: 'user-azure-key',
+        azureApiVersion: '2024-06-01',
+        baseURL: 'user-azure-endpoint',
+        runtimeProvider: ModelProvider.Azure,
+      };
+      const runtime = await initModelRuntimeWithUserPayload('custom-provider', jwtPayload);
       expect(runtime).toBeInstanceOf(ModelRuntime);
       expect(runtime['_runtime']).toBeInstanceOf(LobeAzureOpenAI);
       expect(runtime['_runtime'].baseURL).toBe(jwtPayload.baseURL);

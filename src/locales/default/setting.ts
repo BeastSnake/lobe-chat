@@ -241,6 +241,10 @@ export default {
       title: '限制历史消息数',
       unlimited: '不限历史消息数',
     },
+    enableStreaming: {
+      desc: '启用流式输出以实时显示响应。禁用后仅显示完整响应。',
+      title: '启用流式输出',
+    },
     historyCount: {
       desc: '每次请求携带的消息数（包括最新编写的提问。每个提问和回答都计算1）',
       title: '附带消息数',
@@ -293,6 +297,13 @@ export default {
       title: '主题',
     },
     title: '通用设置',
+  },
+  settingImage: {
+    defaultCount: {
+      desc: '设置图像生成面板在创建新任务时的默认图片数量。',
+      label: '默认图片数量',
+      title: 'AI 绘画设置',
+    },
   },
   settingModel: {
     enableMaxTokens: {
@@ -549,6 +560,7 @@ export default {
     'common': '通用设置',
     'experiment': '实验',
     'hotkey': '快捷键',
+    'image': 'AI 绘画',
     'llm': '语言模型',
     'provider': 'AI 服务商',
     'proxy': '网络代理',
